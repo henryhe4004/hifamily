@@ -22,6 +22,7 @@
 		898693E326F3473000EA991E /* CardUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898693E226F3473000EA991E /* CardUIView.swift */; };
 		898693E726F374F400EA991E /* MissView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898693E626F374F400EA991E /* MissView.swift */; };
 		8996E2C026F420E000F122BD /* LoveHistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8996E2BF26F420E000F122BD /* LoveHistoryView.swift */; };
+		CDED5B0D26F4DF2F00570485 /* LetterVeiw.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDED5B0C26F4DF2F00570485 /* LetterVeiw.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		898693E226F3473000EA991E /* CardUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardUIView.swift; sourceTree = "<group>"; };
 		898693E626F374F400EA991E /* MissView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissView.swift; sourceTree = "<group>"; };
 		8996E2BF26F420E000F122BD /* LoveHistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoveHistoryView.swift; sourceTree = "<group>"; };
+		CDED5B0C26F4DF2F00570485 /* LetterVeiw.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LetterVeiw.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +76,7 @@
 		890C993126EF3A6700494182 /* HifamilySwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				CDED5B0B26F4DF2300570485 /* Letter */,
 				890C993226EF3A6700494182 /* HifamilySwiftUIApp.swift */,
 				890C993426EF3A6700494182 /* ContentView.swift */,
 				898693E426F3746B00EA991E /* Love */,
@@ -116,6 +119,14 @@
 				8996E2BF26F420E000F122BD /* LoveHistoryView.swift */,
 			);
 			path = Love;
+			sourceTree = "<group>";
+		};
+		CDED5B0B26F4DF2300570485 /* Letter */ = {
+			isa = PBXGroup;
+			children = (
+				CDED5B0C26F4DF2F00570485 /* LetterVeiw.swift */,
+			);
+			path = Letter;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -199,6 +210,7 @@
 				8979282426F21053008F49AB /* HomeLandUIView.swift in Sources */,
 				898693DD26F3355F00EA991E /* MemberUIView.swift in Sources */,
 				890C993326EF3A6700494182 /* HifamilySwiftUIApp.swift in Sources */,
+				CDED5B0D26F4DF2F00570485 /* LetterVeiw.swift in Sources */,
 				8996E2C026F420E000F122BD /* LoveHistoryView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
