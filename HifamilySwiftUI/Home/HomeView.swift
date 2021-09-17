@@ -41,16 +41,18 @@ struct HomeView: View {
                     Text("目前家庭有6位成员").font(.system(size: 12)).foregroundColor(Color.gray)
                 }
                 Spacer()
-                Text("在线成员:6").font(.system(size: 14))
+                Text("在线成员:").font(.system(size: 14))
+                    + Text("6").foregroundColor(Color("AccentColor"))
+                    .font(.system(size: 16))
+                    
             }.padding()
             
-            VStack {
+            ZStack {
                 
+                HomeLandUIView()
                 HStack {
-                        Image(imgsTree[indexTree])
-                            .animation(.interpolatingSpring(stiffness: 50, damping: 3))
-                    
-                   
+                    Image(imgsTree[indexTree])
+                        .animation (.interpolatingSpring(stiffness: 50, damping: 3))
                     //切换家庭树
                     Button(action: {
                         if indexTree == 2{
@@ -69,13 +71,14 @@ struct HomeView: View {
                         .background(Color.white)
                         .shadow(color: Color("AccentColor"), radius: 4, x: 2.0, y: 2.0)
                     }
-                    .padding(EdgeInsets(top:280,leading:-100,bottom:0,trailing:0))
+                    .padding(EdgeInsets(top:240,leading:-100,bottom:0,trailing:0))
                     
                 }
-                HomeLandUIView()
-                    
+                .padding(EdgeInsets(top:-180,leading:0,bottom:0,trailing:0))
+                MemberUIView()
+                
             }
-        }.frame(minWidth: 0/*@END_MENU_TOKEN@*/,  maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, minHeight: /*@START_MENU_TOKEN@*/0/*@END_MENU_TOKEN@*/,  maxHeight: /*@START_MENU_TOKEN@*/.infinity, alignment: .topLeading)
+        }.frame(minWidth: 0/*@END_MENU_TOKEN@*/,  maxWidth: .infinity/*@END_MENU_TOKEN@*/, minHeight: /*@START_MENU_TOKEN@*/0,  maxHeight: /*@START_MENU_TOKEN@*/.infinity, alignment: .topLeading)
     
        
         
@@ -85,5 +88,6 @@ struct HomeView: View {
 struct HomeView_Previews: PreviewProvider {
     static var previews: some View {
         HomeView()
+            
     }
 }

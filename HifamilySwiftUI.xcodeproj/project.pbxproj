@@ -13,6 +13,14 @@
 		890C993A26EF3A6800494182 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 890C993926EF3A6800494182 /* Preview Assets.xcassets */; };
 		890C993C26EF3A6800494182 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 890C993B26EF3A6800494182 /* Persistence.swift */; };
 		890C993F26EF3A6800494182 /* HifamilySwiftUI.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 890C993D26EF3A6800494182 /* HifamilySwiftUI.xcdatamodeld */; };
+		890C994726EF4C3F00494182 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 890C994626EF4C3F00494182 /* Launch Screen.storyboard */; };
+		893BD75D26F03B7C00026C38 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 893BD75C26F03B7C00026C38 /* HomeView.swift */; };
+		893BD76126F04A6000026C38 /* LoveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 893BD76026F04A6000026C38 /* LoveView.swift */; };
+		8979282426F21053008F49AB /* HomeLandUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8979282326F21053008F49AB /* HomeLandUIView.swift */; };
+		898693DD26F3355F00EA991E /* MemberUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898693DC26F3355F00EA991E /* MemberUIView.swift */; };
+		898693E326F3473000EA991E /* CardUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898693E226F3473000EA991E /* CardUIView.swift */; };
+		898693E726F374F400EA991E /* MissView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898693E626F374F400EA991E /* MissView.swift */; };
+		8996E2C026F420E000F122BD /* LoveHistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8996E2BF26F420E000F122BD /* LoveHistoryView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +32,14 @@
 		890C993B26EF3A6800494182 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		890C993E26EF3A6800494182 /* HifamilySwiftUI.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = HifamilySwiftUI.xcdatamodel; sourceTree = "<group>"; };
 		890C994026EF3A6800494182 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		890C994626EF4C3F00494182 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		893BD75C26F03B7C00026C38 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; usesTabs = 0; };
+		893BD76026F04A6000026C38 /* LoveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoveView.swift; sourceTree = "<group>"; };
+		8979282326F21053008F49AB /* HomeLandUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeLandUIView.swift; sourceTree = "<group>"; };
+		898693DC26F3355F00EA991E /* MemberUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemberUIView.swift; sourceTree = "<group>"; };
+		898693E226F3473000EA991E /* CardUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardUIView.swift; sourceTree = "<group>"; };
+		898693E626F374F400EA991E /* MissView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissView.swift; sourceTree = "<group>"; };
+		8996E2BF26F420E000F122BD /* LoveHistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoveHistoryView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,10 +74,12 @@
 			children = (
 				890C993226EF3A6700494182 /* HifamilySwiftUIApp.swift */,
 				890C993426EF3A6700494182 /* ContentView.swift */,
+				898693E426F3746B00EA991E /* Love */,
+				8979282526F21739008F49AB /* Home */,
 				890C993626EF3A6800494182 /* Assets.xcassets */,
-				890C993B26EF3A6800494182 /* Persistence.swift */,
 				890C994026EF3A6800494182 /* Info.plist */,
 				890C993D26EF3A6800494182 /* HifamilySwiftUI.xcdatamodeld */,
+				890C994626EF4C3F00494182 /* Launch Screen.storyboard */,
 				890C993826EF3A6800494182 /* Preview Content */,
 			);
 			path = HifamilySwiftUI;
@@ -73,6 +91,28 @@
 				890C993926EF3A6800494182 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		8979282526F21739008F49AB /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				893BD75C26F03B7C00026C38 /* HomeView.swift */,
+				898693E226F3473000EA991E /* CardUIView.swift */,
+				8979282326F21053008F49AB /* HomeLandUIView.swift */,
+				898693DC26F3355F00EA991E /* MemberUIView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		898693E426F3746B00EA991E /* Love */ = {
+			isa = PBXGroup;
+			children = (
+				890C993B26EF3A6800494182 /* Persistence.swift */,
+				893BD76026F04A6000026C38 /* LoveView.swift */,
+				898693E626F374F400EA991E /* MissView.swift */,
+				8996E2BF26F420E000F122BD /* LoveHistoryView.swift */,
+			);
+			path = Love;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -132,6 +172,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				890C994726EF4C3F00494182 /* Launch Screen.storyboard in Resources */,
 				890C993A26EF3A6800494182 /* Preview Assets.xcassets in Resources */,
 				890C993726EF3A6800494182 /* Assets.xcassets in Resources */,
 			);
@@ -146,8 +187,15 @@
 			files = (
 				890C993C26EF3A6800494182 /* Persistence.swift in Sources */,
 				890C993526EF3A6700494182 /* ContentView.swift in Sources */,
+				898693E726F374F400EA991E /* MissView.swift in Sources */,
 				890C993F26EF3A6800494182 /* HifamilySwiftUI.xcdatamodeld in Sources */,
+				893BD75D26F03B7C00026C38 /* HomeView.swift in Sources */,
+				893BD76126F04A6000026C38 /* LoveView.swift in Sources */,
+				898693E326F3473000EA991E /* CardUIView.swift in Sources */,
+				8979282426F21053008F49AB /* HomeLandUIView.swift in Sources */,
+				898693DD26F3355F00EA991E /* MemberUIView.swift in Sources */,
 				890C993326EF3A6700494182 /* HifamilySwiftUIApp.swift in Sources */,
+				8996E2C026F420E000F122BD /* LoveHistoryView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

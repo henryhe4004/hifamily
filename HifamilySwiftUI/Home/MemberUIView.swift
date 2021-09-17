@@ -20,20 +20,20 @@ struct MemberUIView: View {
                     Spacer()
                     
                     ZStack {
-                        ReturnCardUIView()
-//                        Image(systemName: "multiply.circle.fill")
-//                            .resizable(resizingMode: .tile)
-//                            .aspectRatio(contentMode: .fill)
-//                            .foregroundColor(Color("AccentColor"))
-//                            .onTapGesture {
-//                                isPressed = false
-//                            }
-//                            .frame(width: 35, height: 35, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
-//                            .offset(x: -200, y: -250)
+                        Image(systemName: "arrowshape.turn.up.left.fill")
+                            .resizable(resizingMode: .tile)
+                            .aspectRatio(contentMode: .fill)
+                            .foregroundColor(Color("AccentColor"))
+                            .onTapGesture {
+                                isPressed = false
+                            }
+                            .frame(width: 30, height: 30, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                            .offset(x: -480, y: -280)
                             
                         
                         HStack(alignment: .center, spacing: 10) {
                             Spacer()
+                            
                             CardUIView(image: "mother",memberName:"妈妈",memberIdentity:"女儿",memberTelephone:"15025584040").padding()
                             CardUIView(image: "father",memberName:"爸爸",memberIdentity:"爸爸",memberTelephone:"15025584040").padding()
                             CardUIView(image: "sister",memberName:"姐姐",memberIdentity:"姐姐",memberTelephone:"15025584040").padding()
@@ -50,21 +50,30 @@ struct MemberUIView: View {
                             .onTapGesture {
                                 isPressed = true
                             }
+                            .frame(width: 130, height: 130)
+//                            .border(/*@START_MENU_TOKEN@*/Color.black/*@END_MENU_TOKEN@*/)
+                            .offset(x: 10, y: -20)
                         Image("grandmother")
                             .onTapGesture {
                                 isPressed = true
                             }
                     }
+                    .frame(width: 300, height: 130)
+//                    .border(Color.black)
                     HStack {
                         Image("father")
                             .onTapGesture {
                                 isPressed = true
                             }
+//                            .border(Color.black)
+                            .offset(x: -60, y: -30.0)
                         Image("mother")
                             .onTapGesture {
                                 isPressed = true
                             }
                     }
+                    .frame(width: 400, height: 100)
+                    .border(Color.black)
                     HStack {
                         Image("bother")
                             .onTapGesture {
