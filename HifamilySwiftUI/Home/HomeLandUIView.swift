@@ -8,24 +8,27 @@
 import SwiftUI
 
 struct HomeLandUIView: View {
-    @State var FamilyTreeName = "暖暖有爱小家"
+    @State var FamilyTreeName = "相亲相爱一家人"
     var body: some View {
  
         ZStack {
            
             ZStack {
+                
                 TextField("FamilyTreeName",
                           text: $FamilyTreeName,
 //                          每当用户开始或完成编辑文本时，TextField就会调用onEditingChanged关闭。它还传递一个描述开始或结束事件的布尔值。每当用户执行诸如按回车键之类的操作时，TextField就会调用onCommit闭包
 
                           onEditingChanged: { _ in print("changed") },
-                          onCommit: { print("commit") })
+                          onCommit: { print("commit") }
+                )
+                    .disabled(true)
                     .textFieldStyle(DefaultTextFieldStyle())
                     .font(.system(size: 16))
                     .foregroundColor(Color("FamliyTreeNameColor"))
-                    .frame(width: 120, height: 0, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
-                    .padding(.init(top: 90, leading: -172, bottom: 0, trailing: 0))
-                
+                    .frame(width: 90, height: 0)
+                    .offset(x: -123, y: 43)
+                    .multilineTextAlignment(.center)
                 Image("notice")
                     .padding(.init(top: 150, leading: -180, bottom: 0, trailing: 0))
                 

@@ -88,6 +88,7 @@ struct CardUIView: View {
         .onTapGesture {
 //            self.fold.toggle()
         }
+        .frame(minWidth: 0/*@END_MENU_TOKEN@*/,  maxWidth: .infinity/*@END_MENU_TOKEN@*/, minHeight: /*@START_MENU_TOKEN@*/0,  maxHeight: /*@START_MENU_TOKEN@*/.infinity, alignment: .topLeading)
         
     }
     
