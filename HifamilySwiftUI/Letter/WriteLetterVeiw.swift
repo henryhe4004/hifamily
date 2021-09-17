@@ -15,6 +15,7 @@ struct WriteLetterView: View {
             Divider()
             VStack {
                 Text("收信人：")
+                Text("das as ")
                     
             }
         }
