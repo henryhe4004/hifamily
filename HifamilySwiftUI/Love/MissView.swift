@@ -73,7 +73,7 @@ public struct UnderLineTextFieldStyle : TextFieldStyle {
 }
 
 struct MissView: View {
-    @State private var content : String = " "
+    @State  var context : String = " "
     @State private var isUpdate = false
     @Binding var missSetting : Bool
     var body: some View {
@@ -85,22 +85,23 @@ struct MissView: View {
                 Spacer()
             }.padding(EdgeInsets(top: 30, leading: 10, bottom: 10, trailing: 10))
               
-            HStack{
+           
 //                Text("妍妍")
 //                    .foregroundColor(.gray)
 //                    .padding(EdgeInsets(top: 10, leading: 10, bottom: 10, trailing: 10))
 //                Spacer()
                     
-                TextField("个性化语句", text : $content)
-//                    .frame(width:250, height: 50, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                TextField("个性化语句", text : $context)
+                    .frame(width:250, height: 50, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                     .foregroundColor(.gray)
                     .textFieldStyle(UnderLineTextFieldStyle())
-                    .keyboardType(.asciiCapableNumberPad)
-//                    .padding(EdgeInsets(top: 0, leading: -10, bottom: 10, trailing: 15))
-                    .border(Color.gray)
-                    .disabled(true)
+//                    .keyboardType(.asciiCapableNumberPad)
+                    .padding(EdgeInsets(top: 0, leading: -10, bottom: 10, trailing: 15))
+
+//                    .disabled(true)
+
                 
-            }
+            
             HStack{
                 Text("例：妍妍摸了摸你并送了一份思念")
                     .padding(EdgeInsets(top: 0, leading: 10, bottom: 10, trailing: 15))

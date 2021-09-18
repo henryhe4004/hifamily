@@ -166,8 +166,11 @@ struct LoveView: View {
                         self.present.toggle()
                     }){
                     Image(imgsLove[indexLove])
+                        .resizable()
+                        .frame(width: 200, height: 180, alignment: .center)
                         .animation(.interpolatingSpring(stiffness: 50, damping: 3))
-                        .padding()
+//                        .padding()
+                        .scaledToFit()
                     }
                     .alert(isPresented: $present, content: {
                         Alert(title: Text("寄出你的思念成功，消耗一张思念卷，你还剩下\(num)思念卷"))
@@ -180,7 +183,10 @@ struct LoveView: View {
                             self.present.toggle()
                         }){
                         Image(imgsLove[indexLove])
+                            .resizable()
+                            .frame(width: 200, height: 180, alignment: .center)
                             .animation(.interpolatingSpring(stiffness: 50, damping: 3))
+                            
                             .padding()
                         }
                         .alert(isPresented: $present, content: {
@@ -192,9 +198,17 @@ struct LoveView: View {
                             
                             self.present.toggle()
                         }){
-                        Image(imgsLove[indexLove])
-                            .animation(.interpolatingSpring(stiffness: 50, damping: 3))
+                            HStack{
+                                Image(imgsLove[indexLove])
+//                                    .resizable()
+//                                    .frame(width: 250, height: 180, alignment: .center)
+                                    .animation(.spring(dampingFraction: 0.1))
+//                            .animation(.default)
+//                           .animation(.interpolatingSpring(stiffness: 50, damping: 3))
                             .padding()
+                            }
+                            .frame(width: 400, height: 220, alignment: .center)
+//                            .border(Color.black)
                         }
                         .alert(isPresented: $present, content: {
                             Alert(title: Text("没有思念对象哦！请选择思念对象"))
