@@ -7,39 +7,45 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		712A32E826F55EAF0080970D /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 712A32E726F55EAF0080970D /* SwiftUIView.swift */; };
 		890C993326EF3A6700494182 /* HifamilySwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 890C993226EF3A6700494182 /* HifamilySwiftUIApp.swift */; };
 		890C993526EF3A6700494182 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 890C993426EF3A6700494182 /* ContentView.swift */; };
 		890C993726EF3A6800494182 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 890C993626EF3A6800494182 /* Assets.xcassets */; };
 		890C993A26EF3A6800494182 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 890C993926EF3A6800494182 /* Preview Assets.xcassets */; };
 		890C993C26EF3A6800494182 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 890C993B26EF3A6800494182 /* Persistence.swift */; };
-		890C993F26EF3A6800494182 /* HifamilySwiftUI.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 890C993D26EF3A6800494182 /* HifamilySwiftUI.xcdatamodeld */; };
 		893BD75D26F03B7C00026C38 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 893BD75C26F03B7C00026C38 /* HomeView.swift */; };
 		893BD76126F04A6000026C38 /* LoveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 893BD76026F04A6000026C38 /* LoveView.swift */; };
+		8948191C26F5C0C90095E91D /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8948191A26F5C0C90095E91D /* Model.xcdatamodeld */; };
 		8979282426F21053008F49AB /* HomeLandUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8979282326F21053008F49AB /* HomeLandUIView.swift */; };
 		898693DD26F3355F00EA991E /* MemberUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898693DC26F3355F00EA991E /* MemberUIView.swift */; };
 		898693E326F3473000EA991E /* CardUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898693E226F3473000EA991E /* CardUIView.swift */; };
 		898693E726F374F400EA991E /* MissView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898693E626F374F400EA991E /* MissView.swift */; };
 		8989D13326F4D7A0007B6719 /* AddMemberCardUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8989D13226F4D7A0007B6719 /* AddMemberCardUIView.swift */; };
 		8996E2C026F420E000F122BD /* LoveHistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8996E2BF26F420E000F122BD /* LoveHistoryView.swift */; };
+		CDED5B0D26F4DF2F00570485 /* LetterVeiw.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDED5B0C26F4DF2F00570485 /* LetterVeiw.swift */; };
+		CDED5B0F26F4E0D300570485 /* WriteLetterVeiw.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDED5B0E26F4E0D300570485 /* WriteLetterVeiw.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		712A32E726F55EAF0080970D /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
 		890C992F26EF3A6700494182 /* HifamilySwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HifamilySwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		890C993226EF3A6700494182 /* HifamilySwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HifamilySwiftUIApp.swift; sourceTree = "<group>"; };
 		890C993426EF3A6700494182 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		890C993626EF3A6800494182 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		890C993926EF3A6800494182 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		890C993B26EF3A6800494182 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
-		890C993E26EF3A6800494182 /* HifamilySwiftUI.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = HifamilySwiftUI.xcdatamodel; sourceTree = "<group>"; };
 		890C994026EF3A6800494182 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		893BD75C26F03B7C00026C38 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; usesTabs = 0; };
 		893BD76026F04A6000026C38 /* LoveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoveView.swift; sourceTree = "<group>"; };
+		8948191B26F5C0C90095E91D /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		8979282326F21053008F49AB /* HomeLandUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeLandUIView.swift; sourceTree = "<group>"; };
 		898693DC26F3355F00EA991E /* MemberUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemberUIView.swift; sourceTree = "<group>"; };
 		898693E226F3473000EA991E /* CardUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardUIView.swift; sourceTree = "<group>"; };
 		898693E626F374F400EA991E /* MissView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissView.swift; sourceTree = "<group>"; };
 		8989D13226F4D7A0007B6719 /* AddMemberCardUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMemberCardUIView.swift; sourceTree = "<group>"; };
 		8996E2BF26F420E000F122BD /* LoveHistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoveHistoryView.swift; sourceTree = "<group>"; };
+		CDED5B0C26F4DF2F00570485 /* LetterVeiw.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LetterVeiw.swift; sourceTree = "<group>"; };
+		CDED5B0E26F4E0D300570485 /* WriteLetterVeiw.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WriteLetterVeiw.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,14 +78,15 @@
 		890C993126EF3A6700494182 /* HifamilySwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				CDED5B0B26F4DF2300570485 /* Letter */,
 				890C993226EF3A6700494182 /* HifamilySwiftUIApp.swift */,
 				890C993426EF3A6700494182 /* ContentView.swift */,
 				890C993B26EF3A6800494182 /* Persistence.swift */,
+				8948191A26F5C0C90095E91D /* Model.xcdatamodeld */,
 				898693E426F3746B00EA991E /* Love */,
 				8979282526F21739008F49AB /* Home */,
 				890C993626EF3A6800494182 /* Assets.xcassets */,
 				890C994026EF3A6800494182 /* Info.plist */,
-				890C993D26EF3A6800494182 /* HifamilySwiftUI.xcdatamodeld */,
 				890C993826EF3A6800494182 /* Preview Content */,
 			);
 			path = HifamilySwiftUI;
@@ -110,9 +117,19 @@
 			children = (
 				893BD76026F04A6000026C38 /* LoveView.swift */,
 				898693E626F374F400EA991E /* MissView.swift */,
+				712A32E726F55EAF0080970D /* SwiftUIView.swift */,
 				8996E2BF26F420E000F122BD /* LoveHistoryView.swift */,
 			);
 			path = Love;
+			sourceTree = "<group>";
+		};
+		CDED5B0B26F4DF2300570485 /* Letter */ = {
+			isa = PBXGroup;
+			children = (
+				CDED5B0C26F4DF2F00570485 /* LetterVeiw.swift */,
+				CDED5B0E26F4E0D300570485 /* WriteLetterVeiw.swift */,
+			);
+			path = Letter;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -186,15 +203,18 @@
 			files = (
 				890C993C26EF3A6800494182 /* Persistence.swift in Sources */,
 				890C993526EF3A6700494182 /* ContentView.swift in Sources */,
+				8948191C26F5C0C90095E91D /* Model.xcdatamodeld in Sources */,
 				898693E726F374F400EA991E /* MissView.swift in Sources */,
-				890C993F26EF3A6800494182 /* HifamilySwiftUI.xcdatamodeld in Sources */,
 				8989D13326F4D7A0007B6719 /* AddMemberCardUIView.swift in Sources */,
 				893BD75D26F03B7C00026C38 /* HomeView.swift in Sources */,
 				893BD76126F04A6000026C38 /* LoveView.swift in Sources */,
 				898693E326F3473000EA991E /* CardUIView.swift in Sources */,
+				712A32E826F55EAF0080970D /* SwiftUIView.swift in Sources */,
+				CDED5B0F26F4E0D300570485 /* WriteLetterVeiw.swift in Sources */,
 				8979282426F21053008F49AB /* HomeLandUIView.swift in Sources */,
 				898693DD26F3355F00EA991E /* MemberUIView.swift in Sources */,
 				890C993326EF3A6700494182 /* HifamilySwiftUIApp.swift in Sources */,
+				CDED5B0D26F4DF2F00570485 /* LetterVeiw.swift in Sources */,
 				8996E2C026F420E000F122BD /* LoveHistoryView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -384,13 +404,13 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		890C993D26EF3A6800494182 /* HifamilySwiftUI.xcdatamodeld */ = {
+		8948191A26F5C0C90095E91D /* Model.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				890C993E26EF3A6800494182 /* HifamilySwiftUI.xcdatamodel */,
+				8948191B26F5C0C90095E91D /* Model.xcdatamodel */,
 			);
-			currentVersion = 890C993E26EF3A6800494182 /* HifamilySwiftUI.xcdatamodel */;
-			path = HifamilySwiftUI.xcdatamodeld;
+			currentVersion = 8948191B26F5C0C90095E91D /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
