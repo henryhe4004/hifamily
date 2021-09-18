@@ -24,11 +24,11 @@ struct MyButtonStyle : ButtonStyle{
         configuration.label
             .frame(width: 62, height: 20, alignment: .center)
             .padding()
-//            .foregroundColor(configuration.isPressed ? .white :.black)
-//            .background(configuration.isPressed ? LinearGradient(gradient: Gradient(colors: [Color.init(red : 255/255,green: 144/255,blue: 13/255), Color.init(red: 255/255, green: 169/255, blue: 54/255)]), startPoint: .topLeading, endPoint: .bottomTrailing) : LinearGradient(gradient: Gradient(colors: [Color.white, Color.white]), startPoint: .topLeading, endPoint: .bottomTrailing))
-//            .cornerRadius(20.0)
-            .overlay(Capsule(style: /*@START_MENU_TOKEN@*/.continuous/*@END_MENU_TOKEN@*/).stroke(Color.init(red: 255/255, green: 169/255, blue: 54/255),lineWidth: 1.4)).shadow(radius: 1)
-//            .border(Color.init(red : 255/255,green: 144/255,blue: 13/255), width: 1).cornerRadius(20).shadow(radius: 5)
+            .cornerRadius(32.0)
+
+            .overlay(RoundedRectangle(cornerRadius: 32.0, style: /*@START_MENU_TOKEN@*/.continuous/*@END_MENU_TOKEN@*/).stroke(Color.init(red: 255/255, green: 169/255, blue: 54/255),lineWidth: 1.4)).shadow(radius: 1)
+        
+
 
     }
 }
@@ -36,6 +36,7 @@ struct MyButtonStyle : ButtonStyle{
     final class Family: ObservableObject {
         @Published  var person: [String]
         @Published var num: [Int]
+    
         init() {
             person = ["爸爸","妈妈","爷爷","奶奶"]
             num = [1,4,5,7]
@@ -52,11 +53,17 @@ struct MyButtonStyle : ButtonStyle{
 
 
 struct LoveView: View {
-//
-//    @ObservedObject var test = Contact(name: "xiaowang", age: 21,isUpdate: false)
+    
+    var items : [GridItem] = [
+        GridItem(GridItem.Size.flexible(),spacing: 5),
+        GridItem(GridItem.Size.flexible(),spacing: 5),
+        GridItem(GridItem.Size.flexible(),spacing: 5)
+    ]
+    @ObservedObject var family:Family = Family()
     let imgsLove = ["big love","Like","love2"]
     @State var selectedPerson = ["爸爸","妈妈","爷爷"]
     @State  var truePerson = [0,0,0];
+    @State var who = -1
     @State var isSelected = false
     @State  private var indexLove = 2
     @State private var presenting = false
@@ -66,9 +73,8 @@ struct LoveView: View {
     @State var loveHistory : Bool = false
     @State  var num = 5
     var body: some View {
-        ScrollView(.vertical, showsIndicators: false)
-        {
-            ZStack {
+        
+            
                 VStack{
                 HStack {
                     Image("three line")
@@ -89,66 +95,46 @@ struct LoveView: View {
                 }.padding()
                 
                 Divider()
+            ZStack {
+                ScrollView(.vertical, showsIndicators: false)
+                {
                 HStack{
                     VStack(alignment: .leading){
                         Text("选择思念对象")   .font(.system(size: 20))
                     }
                     Spacer()
                 }.padding()
-                HStack{
-                    Button(action: {
-                        if(truePerson[0] == 0 && isSelected == false){
-                            isSelected = true
-                            truePerson[0] = 1
-                        }else{
-                            truePerson[0] = 0
-                        }
-                    }){
-                        Text(selectedPerson[0])
-                            .frame(width: 62, height: 20, alignment: .center)
-                            .cornerRadius(20)
-                            .foregroundColor(truePerson[0] == 1 ? .white :.black)
+                    
+                    LazyVGrid(columns: items, content: {
+                        ForEach(0..<family.person.count){
+                            index in
+                            Button(action: {
+                                if(isSelected == false ){
+                                    if( who == -1 ){
+                                        isSelected = true
+                                        who = index
+//                                                        truePerson[0] = 1
+                                    }
+                                }else {
+                                    if(who == index){
+                                        isSelected = false
+                                        who = -1
+                                    }
+                                    
+                                }
+                                                }){
+                                            Text(family.person[index])
+                                                        .frame(width: 62, height: 20, alignment: .center)
+                                                        .cornerRadius(32)
+                                                .foregroundColor(who == index ? .white :.black)
                             
-                    }
-                    .buttonStyle(MyButtonStyle())
-                    .background(truePerson[0] == 1 ? LinearGradient(gradient: Gradient(colors: [Color.init(red : 255/255,green: 144/255,blue: 13/255), Color.init(red: 255/255, green: 169/255, blue: 54/255)]), startPoint: .topLeading, endPoint: .bottomTrailing) : LinearGradient(gradient: Gradient(colors: [Color.white, Color.white]), startPoint: .topLeading, endPoint: .bottomTrailing)).cornerRadius(20)
-                    .padding(EdgeInsets(top: 0, leading: 20, bottom: 0, trailing: 10))
-                    
-                    Spacer()
-                    Button(action: {
-                        if(truePerson[1] == 0 && isSelected == false){
-                            isSelected = true
-                            truePerson[1] = 1
-                        }else{
-                            truePerson[1] = 0
+                                                }
+                                                .buttonStyle(MyButtonStyle())
+                                                .background( who == index ? LinearGradient(gradient: Gradient(colors: [Color.init(red : 255/255,green: 144/255,blue: 13/255), Color.init(red: 255/255, green: 169/255, blue: 54/255)]), startPoint: .topLeading, endPoint: .bottomTrailing) : LinearGradient(gradient: Gradient(colors: [Color.white, Color.white]), startPoint: .topLeading, endPoint: .bottomTrailing)).cornerRadius(20)
+                                                .padding(EdgeInsets(top: 5, leading: 20, bottom: 5, trailing: 20))
                         }
-                    }){
-                        Text(selectedPerson[1])
-                    }
-                    
-                    .foregroundColor(truePerson[1] == 1 ? .white :.black)
-                    .background(truePerson[1] == 1 ? LinearGradient(gradient: Gradient(colors: [Color.init(red : 255/255,green: 144/255,blue: 13/255), Color.init(red: 255/255, green: 169/255, blue: 54/255)]), startPoint: .topLeading, endPoint: .bottomTrailing) : LinearGradient(gradient: Gradient(colors: [Color.white, Color.white]), startPoint: .topLeading, endPoint: .bottomTrailing)).cornerRadius(20)
-                    .buttonStyle(MyButtonStyle())
-                    .padding(EdgeInsets(top: 0, leading: 20, bottom: 0, trailing: 10))
-                    
-                    Spacer()
-                    Button(action: {
-                        if(truePerson[2] == 0 && isSelected == false){
-                            isSelected = true
-                            truePerson[2] = 1
-                        }else{
-                            
-                            truePerson[2] = 0
-                        }
-                    }){
-                        Text(selectedPerson[2])
-                    }
-                    .buttonStyle(MyButtonStyle())
-                    .foregroundColor(truePerson[2] == 1 ? .white :.black)
-                    .background(truePerson[2] == 1 ? LinearGradient(gradient: Gradient(colors: [Color.init(red : 255/255,green: 144/255,blue: 13/255), Color.init(red: 255/255, green: 169/255, blue: 54/255)]), startPoint: .topLeading, endPoint: .bottomTrailing) : LinearGradient(gradient: Gradient(colors: [Color.white, Color.white]), startPoint: .topLeading, endPoint: .bottomTrailing)).cornerRadius(20)
-                    .padding(EdgeInsets(top: 0, leading: 20, bottom: 0, trailing: 20))
-                }
-                
+                    })
+            
                 
                 HStack{
                     VStack(alignment: .leading, spacing: nil, content: {
@@ -165,15 +151,16 @@ struct LoveView: View {
                         num=num-1;
                         self.present.toggle()
                     }){
-                    Image(imgsLove[indexLove])
-                        .resizable()
-                        .frame(width: 200, height: 180, alignment: .center)
-                        .animation(.interpolatingSpring(stiffness: 50, damping: 3))
-//                        .padding()
-                        .scaledToFit()
+                        HStack {
+                            Image(imgsLove[indexLove])
+                           
+                            .animation(.interpolatingSpring(stiffness: 50, damping: 3))
+    //                        .padding()
+                                .scaledToFit()
+                        }     .frame(width: 400, height: 220, alignment: .center)
                     }
                     .alert(isPresented: $present, content: {
-                        Alert(title: Text("寄出你的思念成功，消耗一张思念卷，你还剩下\(num)思念卷"))
+                        Alert(title: Text("向\(family.person[who])寄出你的思念成功，消耗一张思念卷，你还剩下\(num)思念卷"))
                     })
                 
                     }
@@ -182,12 +169,13 @@ struct LoveView: View {
                             
                             self.present.toggle()
                         }){
-                        Image(imgsLove[indexLove])
-                            .resizable()
-                            .frame(width: 200, height: 180, alignment: .center)
-                            .animation(.interpolatingSpring(stiffness: 50, damping: 3))
-                            
-                            .padding()
+                            HStack {
+                                Image(imgsLove[indexLove])
+                       
+                                .animation(.interpolatingSpring(stiffness: 50, damping: 3))
+                                
+                                    .padding()
+                            }     .frame(width: 400, height: 220, alignment: .center)
                         }
                         .alert(isPresented: $present, content: {
                             Alert(title: Text("寄出你的思念失败，请领取思念卷"))
@@ -200,8 +188,7 @@ struct LoveView: View {
                         }){
                             HStack{
                                 Image(imgsLove[indexLove])
-//                                    .resizable()
-//                                    .frame(width: 250, height: 180, alignment: .center)
+
                                     .animation(.spring(dampingFraction: 0.1))
 //                            .animation(.default)
 //                           .animation(.interpolatingSpring(stiffness: 50, damping: 3))

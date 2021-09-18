@@ -16,9 +16,11 @@ struct MemberUIView: View {
 
         ZStack {
             if(isPressed){
+                Rectangle()
+                    .fill(Color.gray)
+                    .opacity(0.5)
                 ScrollView(.horizontal, showsIndicators: false) {
                     Spacer()
-                    
                     VStack {
                         Image(systemName: "arrowshape.turn.up.left.fill")
                             .resizable(resizingMode: .tile)
@@ -28,17 +30,19 @@ struct MemberUIView: View {
                                 isPressed = false
                             }
                             .frame(width: 30, height: 30, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
-                            .offset(x: -500, y: 0)
+                            .offset(x: -630, y: 0)
+                        
                             
                         
                         HStack(alignment: .center, spacing: 10) {
                             Spacer()
-                            
+                            AddMemberCardUIView()
                             CardUIView(image: "mother",memberName:"妈妈",memberIdentity:"女儿",memberTelephone:"15025584040").padding()
                             CardUIView(image: "father",memberName:"爸爸",memberIdentity:"爸爸",memberTelephone:"15025584040").padding()
                             CardUIView(image: "sister",memberName:"姐姐",memberIdentity:"姐姐",memberTelephone:"15025584040").padding()
                             Spacer()
                         }
+                        
                         
                     }
                     Spacer()
