@@ -24,6 +24,7 @@
 		898693E726F374F400EA991E /* MissView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898693E626F374F400EA991E /* MissView.swift */; };
 		8996E2C026F420E000F122BD /* LoveHistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8996E2BF26F420E000F122BD /* LoveHistoryView.swift */; };
 		CDED5B0D26F4DF2F00570485 /* LetterVeiw.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDED5B0C26F4DF2F00570485 /* LetterVeiw.swift */; };
+		CDED5B0F26F4E0D300570485 /* WriteLetterVeiw.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDED5B0E26F4E0D300570485 /* WriteLetterVeiw.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +47,7 @@
 		898693E626F374F400EA991E /* MissView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissView.swift; sourceTree = "<group>"; };
 		8996E2BF26F420E000F122BD /* LoveHistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoveHistoryView.swift; sourceTree = "<group>"; };
 		CDED5B0C26F4DF2F00570485 /* LetterVeiw.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LetterVeiw.swift; sourceTree = "<group>"; };
+		CDED5B0E26F4E0D300570485 /* WriteLetterVeiw.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WriteLetterVeiw.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +130,7 @@
 			isa = PBXGroup;
 			children = (
 				CDED5B0C26F4DF2F00570485 /* LetterVeiw.swift */,
+				CDED5B0E26F4E0D300570485 /* WriteLetterVeiw.swift */,
 			);
 			path = Letter;
 			sourceTree = "<group>";
@@ -211,6 +214,7 @@
 				893BD76126F04A6000026C38 /* LoveView.swift in Sources */,
 				898693E326F3473000EA991E /* CardUIView.swift in Sources */,
 				712A32E826F55EAF0080970D /* SwiftUIView.swift in Sources */,
+				CDED5B0F26F4E0D300570485 /* WriteLetterVeiw.swift in Sources */,
 				8979282426F21053008F49AB /* HomeLandUIView.swift in Sources */,
 				898693DD26F3355F00EA991E /* MemberUIView.swift in Sources */,
 				890C993326EF3A6700494182 /* HifamilySwiftUIApp.swift in Sources */,
