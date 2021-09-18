@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		71BF8B7B26F609260006081B /* ImagePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71BF8B7A26F609260006081B /* ImagePickerView.swift */; };
 		890C993326EF3A6700494182 /* HifamilySwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 890C993226EF3A6700494182 /* HifamilySwiftUIApp.swift */; };
 		890C993526EF3A6700494182 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 890C993426EF3A6700494182 /* ContentView.swift */; };
 		890C993726EF3A6800494182 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 890C993626EF3A6800494182 /* Assets.xcassets */; };
@@ -26,6 +27,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		71BF8B7A26F609260006081B /* ImagePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerView.swift; sourceTree = "<group>"; };
 		890C992F26EF3A6700494182 /* HifamilySwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HifamilySwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		890C993226EF3A6700494182 /* HifamilySwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HifamilySwiftUIApp.swift; sourceTree = "<group>"; };
 		890C993426EF3A6700494182 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -57,6 +59,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		71BF8B7926F6090D0006081B /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				71BF8B7A26F609260006081B /* ImagePickerView.swift */,
+			);
+			path = Image;
+			sourceTree = "<group>";
+		};
 		890C992626EF3A6700494182 = {
 			isa = PBXGroup;
 			children = (
@@ -76,6 +86,7 @@
 		890C993126EF3A6700494182 /* HifamilySwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				71BF8B7926F6090D0006081B /* Image */,
 				CDED5B0B26F4DF2300570485 /* Letter */,
 				890C993226EF3A6700494182 /* HifamilySwiftUIApp.swift */,
 				890C993426EF3A6700494182 /* ContentView.swift */,
@@ -202,6 +213,7 @@
 				890C993526EF3A6700494182 /* ContentView.swift in Sources */,
 				8948191C26F5C0C90095E91D /* Model.xcdatamodeld in Sources */,
 				898693E726F374F400EA991E /* MissView.swift in Sources */,
+				71BF8B7B26F609260006081B /* ImagePickerView.swift in Sources */,
 				8989D13326F4D7A0007B6719 /* AddMemberCardUIView.swift in Sources */,
 				893BD75D26F03B7C00026C38 /* HomeView.swift in Sources */,
 				893BD76126F04A6000026C38 /* LoveView.swift in Sources */,

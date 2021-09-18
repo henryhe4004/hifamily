@@ -126,7 +126,7 @@ struct LoveView: View {
                                             Text(family.person[index])
                                                         .frame(width: 62, height: 20, alignment: .center)
                                                         .cornerRadius(32)
-                                                .foregroundColor(who == index ? .white :.black)
+                                                .foregroundColor(who == index ? .white : grayColor )
                             
                                                 }
                                                 .buttonStyle(MyButtonStyle())
