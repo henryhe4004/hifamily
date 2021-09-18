@@ -15,6 +15,7 @@ struct CardUIView: View {
     @State var memberName = "智妍"
     @State var memberIdentity = "女儿"
     @State var memberTelephone = "15025584040"
+    @State private var showingAlert = false
     
     var body: some View {
         
@@ -57,11 +58,12 @@ struct CardUIView: View {
             
             if(isChangeInformantion){
                 Button(action: {
+                    self.showingAlert = true
                     self.isChangeInformantion = false
                 }) {
                     Text("保存信息")
-                       
                 }
+               
                 .padding(EdgeInsets(top:10,leading:45,bottom:30,trailing: 40))
                 .buttonStyle(DefaultButtonStyle())
                 
@@ -74,6 +76,10 @@ struct CardUIView: View {
                         .foregroundColor(.white)
                         .background(Color("AccentColor").cornerRadius(10))
                 }
+                .alert(isPresented: $showingAlert) {
+                            Alert(title: Text("修改信息成功"),
+                                  dismissButton: .default(Text("OK")))
+                        }
                 .padding(EdgeInsets(top:10,leading:45,bottom:30,trailing: 40))
                 .buttonStyle(DefaultButtonStyle())
                 

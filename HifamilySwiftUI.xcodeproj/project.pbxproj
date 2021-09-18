@@ -17,10 +17,10 @@
 		893BD75D26F03B7C00026C38 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 893BD75C26F03B7C00026C38 /* HomeView.swift */; };
 		893BD76126F04A6000026C38 /* LoveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 893BD76026F04A6000026C38 /* LoveView.swift */; };
 		8979282426F21053008F49AB /* HomeLandUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8979282326F21053008F49AB /* HomeLandUIView.swift */; };
-		89855F0E26F4A0E50063F869 /* CoreDataTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89855F0D26F4A0E50063F869 /* CoreDataTest.swift */; };
 		898693DD26F3355F00EA991E /* MemberUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898693DC26F3355F00EA991E /* MemberUIView.swift */; };
 		898693E326F3473000EA991E /* CardUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898693E226F3473000EA991E /* CardUIView.swift */; };
 		898693E726F374F400EA991E /* MissView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898693E626F374F400EA991E /* MissView.swift */; };
+		8989D13326F4D7A0007B6719 /* AddMemberCardUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8989D13226F4D7A0007B6719 /* AddMemberCardUIView.swift */; };
 		8996E2C026F420E000F122BD /* LoveHistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8996E2BF26F420E000F122BD /* LoveHistoryView.swift */; };
 /* End PBXBuildFile section */
 
@@ -37,10 +37,10 @@
 		893BD75C26F03B7C00026C38 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; usesTabs = 0; };
 		893BD76026F04A6000026C38 /* LoveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoveView.swift; sourceTree = "<group>"; };
 		8979282326F21053008F49AB /* HomeLandUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeLandUIView.swift; sourceTree = "<group>"; };
-		89855F0D26F4A0E50063F869 /* CoreDataTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataTest.swift; sourceTree = "<group>"; };
 		898693DC26F3355F00EA991E /* MemberUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemberUIView.swift; sourceTree = "<group>"; };
 		898693E226F3473000EA991E /* CardUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardUIView.swift; sourceTree = "<group>"; };
 		898693E626F374F400EA991E /* MissView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissView.swift; sourceTree = "<group>"; };
+		8989D13226F4D7A0007B6719 /* AddMemberCardUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMemberCardUIView.swift; sourceTree = "<group>"; };
 		8996E2BF26F420E000F122BD /* LoveHistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoveHistoryView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -76,6 +76,7 @@
 			children = (
 				890C993226EF3A6700494182 /* HifamilySwiftUIApp.swift */,
 				890C993426EF3A6700494182 /* ContentView.swift */,
+				890C993B26EF3A6800494182 /* Persistence.swift */,
 				898693E426F3746B00EA991E /* Love */,
 				8979282526F21739008F49AB /* Home */,
 				890C993626EF3A6800494182 /* Assets.xcassets */,
@@ -100,9 +101,9 @@
 			children = (
 				893BD75C26F03B7C00026C38 /* HomeView.swift */,
 				898693E226F3473000EA991E /* CardUIView.swift */,
+				8989D13226F4D7A0007B6719 /* AddMemberCardUIView.swift */,
 				8979282326F21053008F49AB /* HomeLandUIView.swift */,
 				898693DC26F3355F00EA991E /* MemberUIView.swift */,
-				89855F0D26F4A0E50063F869 /* CoreDataTest.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -110,7 +111,6 @@
 		898693E426F3746B00EA991E /* Love */ = {
 			isa = PBXGroup;
 			children = (
-				890C993B26EF3A6800494182 /* Persistence.swift */,
 				893BD76026F04A6000026C38 /* LoveView.swift */,
 				898693E626F374F400EA991E /* MissView.swift */,
 				8996E2BF26F420E000F122BD /* LoveHistoryView.swift */,
@@ -188,11 +188,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				89855F0E26F4A0E50063F869 /* CoreDataTest.swift in Sources */,
 				890C993C26EF3A6800494182 /* Persistence.swift in Sources */,
 				890C993526EF3A6700494182 /* ContentView.swift in Sources */,
 				898693E726F374F400EA991E /* MissView.swift in Sources */,
 				890C993F26EF3A6800494182 /* HifamilySwiftUI.xcdatamodeld in Sources */,
+				8989D13326F4D7A0007B6719 /* AddMemberCardUIView.swift in Sources */,
 				893BD75D26F03B7C00026C38 /* HomeView.swift in Sources */,
 				893BD76126F04A6000026C38 /* LoveView.swift in Sources */,
 				898693E326F3473000EA991E /* CardUIView.swift in Sources */,
