@@ -16,7 +16,7 @@ struct WriteLetterView: View {
             VStack{
                 HStack {
                     Text("收信人：")
-                    
+                    Text("demo")
                 }
             }
         }
