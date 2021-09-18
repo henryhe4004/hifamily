@@ -22,8 +22,6 @@ struct HomeLandUIView: View {
                           onEditingChanged: { _ in print("changed") },
                           onCommit: { print("commit") }
                 )
-                    .disabled(true)
-                    .textFieldStyle(DefaultTextFieldStyle())
                     .font(.system(size: 16))
                     .foregroundColor(Color("FamliyTreeNameColor"))
                     .frame(width: 90, height: 0)
