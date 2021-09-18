@@ -13,10 +13,11 @@ struct WriteLetterView: View {
         VStack {
             UpperLine()
             Divider()
-            VStack {
-                Text("收信人：")
-                Text("das as ")
+            VStack{
+                HStack {
+                    Text("收信人：")
                     
+                }
             }
         }
     }
