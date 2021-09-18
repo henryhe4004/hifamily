@@ -8,6 +8,10 @@
 import SwiftUI
 
 struct WriteLetterView: View {
+    
+    @State var letter:String
+    @State var nickname:String
+    
     var body: some View {
         
         VStack {
@@ -16,7 +20,17 @@ struct WriteLetterView: View {
             VStack{
                 HStack {
                     Text("收信人：")
-                    Text("demo")
+                    Text("Your letter is \(letter)!")
+                    TextField(
+                        "User Name",
+                        text: $letter
+                    ) {isEditing in
+                        self.letter = letter
+                    }
+                    .textFieldStyle(RoundedBorderTextFieldStyle())
+                    .autocapitalization(.none)
+                    .disableAutocorrection(true)
+                    .keyboardType(.numberPad)
                 }
             }
         }
@@ -25,7 +39,7 @@ struct WriteLetterView: View {
 
 struct WriteLetterView_Previews: PreviewProvider {
     static var previews: some View {
-        WriteLetterView()
+        WriteLetterView(letter: "",nickname: "")
     }
 }
 
