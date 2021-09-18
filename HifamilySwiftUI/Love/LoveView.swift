@@ -61,8 +61,6 @@ struct LoveView: View {
     ]
     @ObservedObject var family:Family = Family()
     let imgsLove = ["big love","Like","love2"]
-    @State var selectedPerson = ["爸爸","妈妈","爷爷"]
-    @State  var truePerson = [0,0,0];
     @State var who = -1
     @State var isSelected = false
     @State  private var indexLove = 2
@@ -119,6 +117,8 @@ struct LoveView: View {
                                     if(who == index){
                                         isSelected = false
                                         who = -1
+                                    }else{
+                                        who = index
                                     }
                                     
                                 }
