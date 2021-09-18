@@ -95,11 +95,9 @@ struct MissView: View {
                     .frame(width:250, height: 50, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                     .foregroundColor(.gray)
                     .textFieldStyle(UnderLineTextFieldStyle())
-//                    .keyboardType(.asciiCapableNumberPad)
+                    .keyboardType(.default)
                     .padding(EdgeInsets(top: 0, leading: -10, bottom: 10, trailing: 15))
-
-//                    .disabled(true)
-
+            
                 
             
             HStack{
@@ -153,12 +151,16 @@ struct MissView: View {
 //            }
             
         }
+     
         .frame(width: 300)
         .background(Color(white: 0.99))
-        .overlay(RoundedRectangle(cornerRadius: 20.0, style: .continuous).stroke(Color.init(red: 255/255, green: 169/255, blue: 54/255),lineWidth: 1.4)).shadow(radius: 1)
         .cornerRadius(20)
         .shadow(color: .gray, radius: 10, x: 0, y: 3)
         .animation(.easeInOut)
+        .onTapGesture {
+//            self.fold.toggle()
+        }
+        .overlay(RoundedRectangle(cornerRadius: 20.0, style: /*@START_MENU_TOKEN@*/.continuous/*@END_MENU_TOKEN@*/).stroke(Color.init(red: 255/255, green: 169/255, blue: 54/255),lineWidth: 1.4)).shadow(radius: 1)
         
     }
     

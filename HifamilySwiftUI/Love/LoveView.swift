@@ -66,9 +66,8 @@ struct LoveView: View {
     @State var loveHistory : Bool = false
     @State  var num = 5
     var body: some View {
-        ScrollView(.vertical, showsIndicators: false)
-        {
-            ZStack {
+        
+            
                 VStack{
                 HStack {
                     Image("three line")
@@ -89,6 +88,9 @@ struct LoveView: View {
                 }.padding()
                 
                 Divider()
+            ZStack {
+                ScrollView(.vertical, showsIndicators: false)
+                {
                 HStack{
                     VStack(alignment: .leading){
                         Text("选择思念对象")   .font(.system(size: 20))
@@ -101,6 +103,7 @@ struct LoveView: View {
                             isSelected = true
                             truePerson[0] = 1
                         }else{
+                            isSelected = false
                             truePerson[0] = 0
                         }
                     }){
@@ -120,6 +123,7 @@ struct LoveView: View {
                             isSelected = true
                             truePerson[1] = 1
                         }else{
+                            isSelected = false
                             truePerson[1] = 0
                         }
                     }){
@@ -137,7 +141,7 @@ struct LoveView: View {
                             isSelected = true
                             truePerson[2] = 1
                         }else{
-                            
+                            isSelected = false
                             truePerson[2] = 0
                         }
                     }){
@@ -165,12 +169,13 @@ struct LoveView: View {
                         num=num-1;
                         self.present.toggle()
                     }){
-                    Image(imgsLove[indexLove])
-                        .resizable()
-                        .frame(width: 200, height: 180, alignment: .center)
-                        .animation(.interpolatingSpring(stiffness: 50, damping: 3))
-//                        .padding()
-                        .scaledToFit()
+                        HStack {
+                            Image(imgsLove[indexLove])
+                           
+                            .animation(.interpolatingSpring(stiffness: 50, damping: 3))
+    //                        .padding()
+                                .scaledToFit()
+                        }     .frame(width: 400, height: 220, alignment: .center)
                     }
                     .alert(isPresented: $present, content: {
                         Alert(title: Text("寄出你的思念成功，消耗一张思念卷，你还剩下\(num)思念卷"))
@@ -182,12 +187,13 @@ struct LoveView: View {
                             
                             self.present.toggle()
                         }){
-                        Image(imgsLove[indexLove])
-                            .resizable()
-                            .frame(width: 200, height: 180, alignment: .center)
-                            .animation(.interpolatingSpring(stiffness: 50, damping: 3))
-                            
-                            .padding()
+                            HStack {
+                                Image(imgsLove[indexLove])
+                       
+                                .animation(.interpolatingSpring(stiffness: 50, damping: 3))
+                                
+                                    .padding()
+                            }     .frame(width: 400, height: 220, alignment: .center)
                         }
                         .alert(isPresented: $present, content: {
                             Alert(title: Text("寄出你的思念失败，请领取思念卷"))
@@ -200,8 +206,7 @@ struct LoveView: View {
                         }){
                             HStack{
                                 Image(imgsLove[indexLove])
-//                                    .resizable()
-//                                    .frame(width: 250, height: 180, alignment: .center)
+
                                     .animation(.spring(dampingFraction: 0.1))
 //                            .animation(.default)
 //                           .animation(.interpolatingSpring(stiffness: 50, damping: 3))
