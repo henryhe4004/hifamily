@@ -7,11 +7,18 @@
 
 import SwiftUI
 
+final class Letters: ObservableObject {
+    @Published  var letter:String
+    @Published var nickname:String
+    init() {
+        letter = ""
+        nickname = ""
+    }
+}
+
 struct WriteLetterView: View {
     
-    @State var letter:String
-    @State var nickname:String
-    
+    @ObservedObject var letterr:Letters = Letters()
     var body: some View {
         
         VStack {
@@ -20,12 +27,12 @@ struct WriteLetterView: View {
             VStack{
                 HStack {
                     Text("收信人：")
-                    Text("Your letter is \(letter)!")
+                    Text("Your letter is \(letterr.letter)!")
                     TextField(
                         "User Name",
-                        text: $letter
+                        text: $letterr.letter
                     ) {isEditing in
-                        self.letter = letter
+                        self.letterr.letter = letterr.letter
                     }
                     .textFieldStyle(RoundedBorderTextFieldStyle())
                     .autocapitalization(.none)
@@ -39,7 +46,7 @@ struct WriteLetterView: View {
 
 struct WriteLetterView_Previews: PreviewProvider {
     static var previews: some View {
-        WriteLetterView(letter: "",nickname: "")
+        WriteLetterView()
     }
 }
 

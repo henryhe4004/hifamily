@@ -16,8 +16,9 @@ let grayColor = Color(UIColor(red: 0.45, green: 0.45, blue: 0.45,alpha: 1))
 let grayColor2 = Color(UIColor(red: 0.55, green: 0.55, blue: 0.55,alpha:1))
 
 struct LetterView: View {
+    
     var body: some View {
-        
+        NavigationView {
         VStack {
             // 上层导航栏
             UpperNavigationBar()
@@ -189,7 +190,13 @@ struct LetterView: View {
                                 }
                             }
                             .frame(width: 152)
-                            PencilBox()
+                           
+//                            PencilBox()
+                                NavigationLink(destination: WriteLetterView())
+                                {
+                                    PencilBox()
+                                }.navigationBarHidden(true)
+                            
                         }.padding(EdgeInsets(top: -50, leading: 0, bottom: 0, trailing: 0))
                     }
                     .frame(height: 294 )
@@ -772,7 +779,7 @@ struct SixBox: View {
             }
             .frame(height: 156,alignment: .bottom)
         }
-
+    }
     }
 }
 
