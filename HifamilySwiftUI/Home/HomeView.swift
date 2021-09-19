@@ -38,15 +38,14 @@ struct HomeView: View {
                 VStack(alignment: .leading) {
                     Text("家庭ID：a566").font(.system(size: 14))
                     
-//                    Text("目前家庭有6位成员").font(.system(size: 12)).foregroundColor(Color.gray)
+                    Text("目前家庭有6位成员").font(.system(size: 12)).foregroundColor(Color.gray)
                 }
                 Spacer()
-                Text("家庭成员:").font(.system(size: 14))
+                Text("在线成员:").font(.system(size: 14))
                     + Text("6").foregroundColor(Color("AccentColor"))
                     .font(.system(size: 16))
                     
-                    
-            }.padding(20)
+            }.padding()
             
             ZStack {
                 
@@ -75,9 +74,8 @@ struct HomeView: View {
                     .padding(EdgeInsets(top:240,leading:-100,bottom:0,trailing:0))
                     
                 }
-                .padding(EdgeInsets(top:0,leading:0,bottom:0,trailing:0))
-//                MemberUIView()
-                Textfield02()
+                .padding(EdgeInsets(top:-180,leading:0,bottom:0,trailing:0))
+                MemberUIView()
                 
             }
         }.frame(minWidth: 0/*@END_MENU_TOKEN@*/,  maxWidth: .infinity/*@END_MENU_TOKEN@*/, minHeight: /*@START_MENU_TOKEN@*/0,  maxHeight: /*@START_MENU_TOKEN@*/.infinity, alignment: .topLeading)
