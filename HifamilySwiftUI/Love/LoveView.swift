@@ -25,7 +25,7 @@ struct MyButtonStyle : ButtonStyle{
             .frame(width: 62, height: 20, alignment: .center)
             .padding()
             .cornerRadius(32.0)
-
+//            .shadow(color: .gray, radius: 3, x: 0, y: 3)
             .overlay(RoundedRectangle(cornerRadius: 32.0, style: /*@START_MENU_TOKEN@*/.continuous/*@END_MENU_TOKEN@*/).stroke(Color.init(red: 255/255, green: 169/255, blue: 54/255),lineWidth: 1.4)).shadow(radius: 1)
         
 
@@ -123,15 +123,25 @@ struct LoveView: View {
                                     
                                 }
                                                 }){
-                                            Text(family.person[index])
-                                                        .frame(width: 62, height: 20, alignment: .center)
-                                                        .cornerRadius(32)
-                                                .foregroundColor(who == index ? .white : grayColor )
+                                
+                                VStack {
+                                    Text(family.person[index])
+                                                            .frame(width: 62, height: 20, alignment: .center)
+                                                            .cornerRadius(32)
+                                        .foregroundColor(who == index ? .white : grayColor )
+                                }
                             
-                                                }
-                                                .buttonStyle(MyButtonStyle())
-                                                .background( who == index ? LinearGradient(gradient: Gradient(colors: [Color.init(red : 255/255,green: 144/255,blue: 13/255), Color.init(red: 255/255, green: 169/255, blue: 54/255)]), startPoint: .topLeading, endPoint: .bottomTrailing) : LinearGradient(gradient: Gradient(colors: [Color.white, Color.white]), startPoint: .topLeading, endPoint: .bottomTrailing)).cornerRadius(20)
+                                        }
+                            .frame(width: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, height: 50, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                            .animation(.easeInOut)
+//                                                .buttonStyle(MyButtonStyle())
+                       
+                                                .background( who == index ? LinearGradient(gradient: Gradient(colors: [Color.init(red : 255/255,green: 144/255,blue: 13/255), Color.init(red: 255/255, green: 169/255, blue: 54/255)]), startPoint: .topLeading, endPoint: .bottomTrailing) : LinearGradient(gradient: Gradient(colors: [Color.white, Color.white]), startPoint: .topLeading, endPoint: .bottomTrailing)).cornerRadius(15)
+                            .shadow(color: Color("AccentColor"), radius: 3, x: 0.5, y: 0.5)
+//                            .overlay(RoundedRectangle(cornerRadius: 15.0, style: .continuous).stroke(Color.init(red: 255/255, green: 169/255, blue: 54/255),lineWidth: 2.0))
                                                 .padding(EdgeInsets(top: 5, leading: 20, bottom: 5, trailing: 20))
+                                                
+                           
                         }
                     })
             

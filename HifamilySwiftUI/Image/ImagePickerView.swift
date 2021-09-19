@@ -13,23 +13,7 @@ struct ImagePickerView: View {
         
        var body: some View {
            VStack {
-            HStack {
-                Image("Iconly-Bulk-Setting")
-                    .resizable()
-                    .frame(width:23,
-                           height:23,
-                           alignment:.center)
-                Spacer()
-                Text("Family album")
-                    .foregroundColor(Color("AccentColor"))
-                    .font(.system(size: 18))
-                Spacer()
-                Image("Iconly-Bulk-Plus")
-                    .resizable()
-                    .frame(width:23,
-                           height:23,
-                           alignment:.center)
-            }.padding()
+            
                    MediaPicker()
                
            }
