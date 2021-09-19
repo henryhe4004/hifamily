@@ -11,6 +11,7 @@
 		718E65E626F6D1BA0010165C /* ImageUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 718E65E526F6D1BA0010165C /* ImageUIView.swift */; };
 		718E65E926F71A0D0010165C /* photosUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 718E65E826F71A0D0010165C /* photosUIView.swift */; };
 		718E65EC26F71A250010165C /* albumUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 718E65EB26F71A250010165C /* albumUIView.swift */; };
+		718E65EF26F74E430010165C /* IssueUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 718E65EE26F74E430010165C /* IssueUIView.swift */; };
 		71BF8B7B26F609260006081B /* ImagePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71BF8B7A26F609260006081B /* ImagePickerView.swift */; };
 		890C993326EF3A6700494182 /* HifamilySwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 890C993226EF3A6700494182 /* HifamilySwiftUIApp.swift */; };
 		890C993526EF3A6700494182 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 890C993426EF3A6700494182 /* ContentView.swift */; };
@@ -38,6 +39,7 @@
 		718E65E526F6D1BA0010165C /* ImageUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageUIView.swift; sourceTree = "<group>"; };
 		718E65E826F71A0D0010165C /* photosUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = photosUIView.swift; sourceTree = "<group>"; };
 		718E65EB26F71A250010165C /* albumUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = albumUIView.swift; sourceTree = "<group>"; };
+		718E65EE26F74E430010165C /* IssueUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IssueUIView.swift; sourceTree = "<group>"; };
 		71BF8B7A26F609260006081B /* ImagePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerView.swift; sourceTree = "<group>"; };
 		890C992F26EF3A6700494182 /* HifamilySwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HifamilySwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		890C993226EF3A6700494182 /* HifamilySwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HifamilySwiftUIApp.swift; sourceTree = "<group>"; };
@@ -80,6 +82,7 @@
 				718E65E526F6D1BA0010165C /* ImageUIView.swift */,
 				718E65E826F71A0D0010165C /* photosUIView.swift */,
 				718E65EB26F71A250010165C /* albumUIView.swift */,
+				718E65EE26F74E430010165C /* IssueUIView.swift */,
 			);
 			path = Image;
 			sourceTree = "<group>";
@@ -307,6 +310,7 @@
 				8979282426F21053008F49AB /* HomeLandUIView.swift in Sources */,
 				898693DD26F3355F00EA991E /* MemberUIView.swift in Sources */,
 				890C993326EF3A6700494182 /* HifamilySwiftUIApp.swift in Sources */,
+				718E65EF26F74E430010165C /* IssueUIView.swift in Sources */,
 				CDED5B0D26F4DF2F00570485 /* LetterVeiw.swift in Sources */,
 				8996E2C026F420E000F122BD /* LoveHistoryView.swift in Sources */,
 				718E65E926F71A0D0010165C /* photosUIView.swift in Sources */,
