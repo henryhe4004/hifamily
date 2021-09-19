@@ -45,11 +45,11 @@ struct AddMemberCardUIView: View {
                         
                         .foregroundColor(Color("LandColorAfter"))
                     
-                    Text("成员身份")
+                    Text("成员生日")
                         .font(.callout)
                         .bold()
                         .frame(maxWidth: .infinity, alignment: .leading)
-                    TextField("请输入成员身份",text:$memberIdentity)
+                    TextField("请输入成员生日",text:$memberIdentity)
                         .textFieldStyle(RoundedBorderTextFieldStyle())
                         
                         .foregroundColor(Color("LandColorAfter"))

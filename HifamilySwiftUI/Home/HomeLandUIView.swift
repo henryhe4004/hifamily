@@ -6,35 +6,58 @@
 //
 
 import SwiftUI
+import CoreData
+
+class FamilyNameModel: ObservableObject {
+    @Published var FamilyTreeName: String = "相亲相爱"
+}
 
 struct HomeLandUIView: View {
-    @State var FamilyTreeName = "相亲相爱一家人"
+    
+       @ObservedObject var model = FamilyNameModel()
+       @State var isPresented = false
+    
+    let primaryButton = Alert.Button.default(Text("确认")) {
+                print("Yes")
+            }
+        
+            let secondaryButton = Alert.Button.destructive(Text("取消")) {
+                
+                            }
+    
+    
+        var alert: Alert {
+            Alert(title: Text("提示"),
+                 message: Text("确认修改家庭树的名字为“\(self.model.FamilyTreeName)”"),
+                 primaryButton: primaryButton,
+                 secondaryButton: secondaryButton)
+        }
+    
     var body: some View {
  
         ZStack {
            
             ZStack {
-                
+                Image("notice")
+                    .padding(.init(top: 300, leading: -180, bottom: 0, trailing: 0))
                 TextField("FamilyTreeName",
-                          text: $FamilyTreeName,
-//                          每当用户开始或完成编辑文本时，TextField就会调用onEditingChanged关闭。它还传递一个描述开始或结束事件的布尔值。每当用户执行诸如按回车键之类的操作时，TextField就会调用onCommit闭包
-
-                          onEditingChanged: { _ in print("changed") },
-                          onCommit: { print("commit") }
+                          text: $model.FamilyTreeName,
+//                          onEditingChanged:{ _ in isPresented = true},
+                          onCommit: {isPresented = true}
                 )
                     .font(.system(size: 16))
                     .foregroundColor(Color("FamliyTreeNameColor"))
                     .frame(width: 90, height: 0)
-                    .offset(x: -123, y: 43)
+                    .offset(x: -123, y: 118)
                     .multilineTextAlignment(.center)
-                Image("notice")
-                    .padding(.init(top: 150, leading: -180, bottom: 0, trailing: 0))
-                
+                .alert(isPresented: $isPresented) { () -> Alert in
+                                alert
+                            }
             }
             RoundedRectangle(cornerRadius: 27)
                 .fill(LinearGradient(gradient: .init(colors: [Color("LandColorBefore"), Color("LandColorAfter")]), startPoint:  .leading/*@END_MENU_TOKEN@*/, endPoint: /*@START_MENU_TOKEN@*/ .trailing))
-                .frame(width: .infinity, height: 200, alignment: .center)
-                .padding(EdgeInsets(top:500,leading:0,bottom:0,trailing:0))
+                .frame(width: .infinity, height: 200)
+                .offset( y: 335)
                 .opacity(0.8)
         }
             

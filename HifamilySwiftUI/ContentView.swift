@@ -7,6 +7,7 @@
 
 import SwiftUI
 import CoreData
+import Combine
 //第一个结构体遵循View协议，描述视图的内容和布局
 
 struct ContentView: View {
