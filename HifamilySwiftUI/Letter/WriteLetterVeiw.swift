@@ -7,7 +7,18 @@
 
 import SwiftUI
 
+final class Letters: ObservableObject {
+    @Published  var letter:String
+    @Published var nickname:String
+    init() {
+        letter = ""
+        nickname = ""
+    }
+}
+
 struct WriteLetterView: View {
+    
+    @ObservedObject var letterr:Letters = Letters()
     var body: some View {
         
         VStack {
@@ -16,7 +27,17 @@ struct WriteLetterView: View {
             VStack{
                 HStack {
                     Text("收信人：")
-                    Text("demo")
+                    Text("Your letter is \(letterr.letter)!")
+                    TextField(
+                        "User Name",
+                        text: $letterr.letter
+                    ) {isEditing in
+                        self.letterr.letter = letterr.letter
+                    }
+                    .textFieldStyle(RoundedBorderTextFieldStyle())
+                    .autocapitalization(.none)
+                    .disableAutocorrection(true)
+                    .keyboardType(.numberPad)
                 }
             }
         }
