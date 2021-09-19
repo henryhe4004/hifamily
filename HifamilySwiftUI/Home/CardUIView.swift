@@ -7,24 +7,18 @@
 
 import SwiftUI
 
-
-
-
 struct CardUIView: View {
 
-    
-    
     var image: String = "mother" /// 卡片图片名称，供外部传入
 
     @State var isChangeInformantion = false //用来标识是否更改信息
     @State var memberName = "智妍"
     @State var memberIdentity = "女儿"
-    @State var memberTelephone = "2021/12/1"
+    @State var memberTelephone = "15025584040"
     @State private var showingAlert = false
     
     var body: some View {
-//        KeyboardHost {
-        ScrollView(.horizontal){
+        
         VStack {
             Image(image)
                 .resizable()
@@ -42,11 +36,11 @@ struct CardUIView: View {
                     .disabled(!isChangeInformantion)
                     .foregroundColor(Color("LandColorAfter"))
                 
-                Text("成员生日")
+                Text("成员身份")
                     .font(.callout)
                     .bold()
                     .frame(maxWidth: .infinity, alignment: .leading)
-                TextField("请输入成员生日",text:$memberIdentity)
+                TextField("请输入成员身份",text:$memberIdentity)
                     .textFieldStyle(RoundedBorderTextFieldStyle())
                     .disabled(!isChangeInformantion)
                     .foregroundColor(Color("LandColorAfter"))
@@ -92,7 +86,6 @@ struct CardUIView: View {
             }
             
         }
-        
         .frame(width: 300)
         .background(Color(white: 0.99))
         .cornerRadius(10)
@@ -102,9 +95,6 @@ struct CardUIView: View {
 //            self.fold.toggle()
         }
         .frame(minWidth: 0/*@END_MENU_TOKEN@*/,  maxWidth: .infinity/*@END_MENU_TOKEN@*/, minHeight: /*@START_MENU_TOKEN@*/0,  maxHeight: /*@START_MENU_TOKEN@*/.infinity, alignment: .topLeading)
-        
-        }
-//        }
         
     }
     
