@@ -23,6 +23,7 @@
 		898693E726F374F400EA991E /* MissView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898693E626F374F400EA991E /* MissView.swift */; };
 		8989D13326F4D7A0007B6719 /* AddMemberCardUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8989D13226F4D7A0007B6719 /* AddMemberCardUIView.swift */; };
 		8996E2C026F420E000F122BD /* LoveHistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8996E2BF26F420E000F122BD /* LoveHistoryView.swift */; };
+		89E3AB9426F73ABD009B8611 /* CoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89E3AB9326F73ABD009B8611 /* CoreData.swift */; };
 		CDED5B0D26F4DF2F00570485 /* LetterVeiw.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDED5B0C26F4DF2F00570485 /* LetterVeiw.swift */; };
 		CDED5B0F26F4E0D300570485 /* WriteLetterVeiw.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDED5B0E26F4E0D300570485 /* WriteLetterVeiw.swift */; };
 /* End PBXBuildFile section */
@@ -46,6 +47,7 @@
 		898693E626F374F400EA991E /* MissView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissView.swift; sourceTree = "<group>"; };
 		8989D13226F4D7A0007B6719 /* AddMemberCardUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMemberCardUIView.swift; sourceTree = "<group>"; };
 		8996E2BF26F420E000F122BD /* LoveHistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoveHistoryView.swift; sourceTree = "<group>"; };
+		89E3AB9326F73ABD009B8611 /* CoreData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreData.swift; sourceTree = "<group>"; };
 		CDED5B0C26F4DF2F00570485 /* LetterVeiw.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LetterVeiw.swift; sourceTree = "<group>"; };
 		CDED5B0E26F4E0D300570485 /* WriteLetterVeiw.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WriteLetterVeiw.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -83,6 +85,7 @@
 				CDED5B0B26F4DF2300570485 /* Letter */,
 				890C993226EF3A6700494182 /* HifamilySwiftUIApp.swift */,
 				890C993426EF3A6700494182 /* ContentView.swift */,
+				89E3AB9326F73ABD009B8611 /* CoreData.swift */,
 				890C993B26EF3A6800494182 /* Persistence.swift */,
 				8948191A26F5C0C90095E91D /* Model.xcdatamodeld */,
 				898693E426F3746B00EA991E /* Love */,
@@ -207,6 +210,7 @@
 				890C993C26EF3A6800494182 /* Persistence.swift in Sources */,
 				890C993526EF3A6700494182 /* ContentView.swift in Sources */,
 				8948191C26F5C0C90095E91D /* Model.xcdatamodeld in Sources */,
+				89E3AB9426F73ABD009B8611 /* CoreData.swift in Sources */,
 				898693E726F374F400EA991E /* MissView.swift in Sources */,
 				8989D13326F4D7A0007B6719 /* AddMemberCardUIView.swift in Sources */,
 				893BD75D26F03B7C00026C38 /* HomeView.swift in Sources */,

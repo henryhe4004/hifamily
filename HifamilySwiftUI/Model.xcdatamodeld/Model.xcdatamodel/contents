@@ -1,17 +1,63 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="18154" systemVersion="20B50" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
-    <entity name="Home" representedClassName="Home" syncable="YES" codeGenerationType="class">
-        <attribute name="kFamilyId" optional="YES" attributeType="String"/>
-        <attribute name="kFamilyName" optional="YES" attributeType="String"/>
-        <attribute name="kMemberAllCount" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
-        <attribute name="kMemberCount" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
-        <attribute name="kMemberInformation" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+    <entity name="AlbumModel" representedClassName="AlbumModel" syncable="YES" codeGenerationType="class">
+        <attribute name="name" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="FamilyModel" representedClassName="FamilyModel" syncable="YES" codeGenerationType="class">
+        <attribute name="familyId" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="familyName" optional="YES" attributeType="String"/>
+        <attribute name="memberCount" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="treeIndex" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
     </entity>
     <entity name="Item" representedClassName="Item" syncable="YES" codeGenerationType="class">
         <attribute name="timestamp" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
     </entity>
+    <entity name="LetterModel" representedClassName="LetterModel" syncable="YES" codeGenerationType="class">
+        <attribute name="appIdReceived" optional="YES" attributeType="String"/>
+        <attribute name="appIdSend" optional="YES" attributeType="String"/>
+        <attribute name="data" optional="YES" attributeType="String"/>
+        <attribute name="familyId" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="letterContent" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="MemberModel" representedClassName="MemberModel" syncable="YES" codeGenerationType="class">
+        <attribute name="appId" optional="YES" attributeType="String"/>
+        <attribute name="avatar" optional="YES" attributeType="String"/>
+        <attribute name="birthday" optional="YES" attributeType="String"/>
+        <attribute name="familyId" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="memberName" optional="YES" attributeType="String"/>
+        <attribute name="memberStatus" optional="YES" attributeType="String"/>
+        <attribute name="missCard" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="phone" optional="YES" attributeType="String"/>
+        <attribute name="status" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="MissModel" representedClassName="MissModel" syncable="YES" codeGenerationType="class">
+        <attribute name="appIdReceived" optional="YES" attributeType="String"/>
+        <attribute name="appIdSend" optional="YES" attributeType="String"/>
+        <attribute name="data" optional="YES" attributeType="String"/>
+        <attribute name="familyId" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="missContent" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="Student" representedClassName="Student" syncable="YES" codeGenerationType="class">
+        <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="TimerLineModel" representedClassName="TimerLineModel" syncable="YES" codeGenerationType="class">
+        <attribute name="appId" optional="YES" attributeType="String"/>
+        <attribute name="content" optional="YES" attributeType="String"/>
+        <attribute name="data" optional="YES" attributeType="String"/>
+        <attribute name="familyId" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="icon" optional="YES" attributeType="String"/>
+        <attribute name="images" optional="YES" attributeType="String"/>
+        <attribute name="index" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+    </entity>
     <elements>
+        <element name="FamilyModel" positionX="-63" positionY="-9" width="128" height="89"/>
         <element name="Item" positionX="-63" positionY="-18" width="128" height="44"/>
-        <element name="Home" positionX="-63" positionY="-9" width="128" height="104"/>
+        <element name="MemberModel" positionX="-63" positionY="18" width="128" height="164"/>
+        <element name="MissModel" positionX="-54" positionY="81" width="128" height="104"/>
+        <element name="LetterModel" positionX="-36" positionY="90" width="128" height="104"/>
+        <element name="TimerLineModel" positionX="-18" positionY="99" width="128" height="134"/>
+        <element name="AlbumModel" positionX="0" positionY="126" width="128" height="44"/>
+        <element name="Student" positionX="18" positionY="135" width="128" height="59"/>
     </elements>
 </model>
