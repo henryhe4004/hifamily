@@ -29,7 +29,7 @@ struct LoveHistoryView: View {
                             Text("\(family.person[i])今年共思念了你\(family.num[i])次")
                                 .tracking(3)
                                 .padding(EdgeInsets(top: 2, leading: 20, bottom: 0, trailing:10 ))
-                            
+                                .foregroundColor(grayColor)
                             Spacer()
                         }
                     }
@@ -43,6 +43,7 @@ struct LoveHistoryView: View {
                             Text("我今年共思念\(family.person[i])了\(family.num[i])次")
                                 .tracking(3)
                                 .padding(EdgeInsets(top: 2, leading: 20, bottom: 0, trailing:10 ))
+                                .foregroundColor(grayColor)
                             Spacer()
                         }
                     }

@@ -3,10 +3,16 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		718E65DF26F6BC600010165C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 718E65E126F6BC600010165C /* Localizable.strings */; };
+		718E65E626F6D1BA0010165C /* ImageUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 718E65E526F6D1BA0010165C /* ImageUIView.swift */; };
+		718E65E926F71A0D0010165C /* photosUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 718E65E826F71A0D0010165C /* photosUIView.swift */; };
+		718E65EC26F71A250010165C /* albumUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 718E65EB26F71A250010165C /* albumUIView.swift */; };
+		718E65EF26F74E430010165C /* IssueUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 718E65EE26F74E430010165C /* IssueUIView.swift */; };
+		71BF8B7B26F609260006081B /* ImagePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71BF8B7A26F609260006081B /* ImagePickerView.swift */; };
 		890C993326EF3A6700494182 /* HifamilySwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 890C993226EF3A6700494182 /* HifamilySwiftUIApp.swift */; };
 		890C993526EF3A6700494182 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 890C993426EF3A6700494182 /* ContentView.swift */; };
 		890C993726EF3A6800494182 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 890C993626EF3A6800494182 /* Assets.xcassets */; };
@@ -16,6 +22,7 @@
 		893BD76126F04A6000026C38 /* LoveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 893BD76026F04A6000026C38 /* LoveView.swift */; };
 		8948191C26F5C0C90095E91D /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8948191A26F5C0C90095E91D /* Model.xcdatamodeld */; };
 		8979282426F21053008F49AB /* HomeLandUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8979282326F21053008F49AB /* HomeLandUIView.swift */; };
+		897B942553CF71EF103D7196 /* Pods_HifamilySwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EB6FA4C7D2C14E276DEA455 /* Pods_HifamilySwiftUI.framework */; };
 		898693DD26F3355F00EA991E /* MemberUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898693DC26F3355F00EA991E /* MemberUIView.swift */; };
 		898693E326F3473000EA991E /* CardUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898693E226F3473000EA991E /* CardUIView.swift */; };
 		898693E726F374F400EA991E /* MissView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898693E626F374F400EA991E /* MissView.swift */; };
@@ -27,6 +34,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		52E4DBD64E949E0CD50B8B47 /* Pods-HifamilySwiftUI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HifamilySwiftUI.release.xcconfig"; path = "Target Support Files/Pods-HifamilySwiftUI/Pods-HifamilySwiftUI.release.xcconfig"; sourceTree = "<group>"; };
+		718E65E026F6BC600010165C /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		718E65E326F6BC790010165C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		718E65E526F6D1BA0010165C /* ImageUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageUIView.swift; sourceTree = "<group>"; };
+		718E65E826F71A0D0010165C /* photosUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = photosUIView.swift; sourceTree = "<group>"; };
+		718E65EB26F71A250010165C /* albumUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = albumUIView.swift; sourceTree = "<group>"; };
+		718E65EE26F74E430010165C /* IssueUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IssueUIView.swift; sourceTree = "<group>"; };
+		71BF8B7A26F609260006081B /* ImagePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerView.swift; sourceTree = "<group>"; };
 		890C992F26EF3A6700494182 /* HifamilySwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HifamilySwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		890C993226EF3A6700494182 /* HifamilySwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HifamilySwiftUIApp.swift; sourceTree = "<group>"; };
 		890C993426EF3A6700494182 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -43,7 +58,11 @@
 		898693E626F374F400EA991E /* MissView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissView.swift; sourceTree = "<group>"; };
 		8989D13226F4D7A0007B6719 /* AddMemberCardUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMemberCardUIView.swift; sourceTree = "<group>"; };
 		8996E2BF26F420E000F122BD /* LoveHistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoveHistoryView.swift; sourceTree = "<group>"; };
+
 		CDE09D0726F79449004DE2AB /* DataTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataTest.swift; sourceTree = "<group>"; };
+
+		8EB6FA4C7D2C14E276DEA455 /* Pods_HifamilySwiftUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HifamilySwiftUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BDE5D32924C01CF71CF5F387 /* Pods-HifamilySwiftUI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HifamilySwiftUI.debug.xcconfig"; path = "Target Support Files/Pods-HifamilySwiftUI/Pods-HifamilySwiftUI.debug.xcconfig"; sourceTree = "<group>"; };
 		CDED5B0C26F4DF2F00570485 /* LetterVeiw.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LetterVeiw.swift; sourceTree = "<group>"; };
 		CDED5B0E26F4E0D300570485 /* WriteLetterVeiw.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WriteLetterVeiw.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -53,17 +72,33 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				897B942553CF71EF103D7196 /* Pods_HifamilySwiftUI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		71BF8B7926F6090D0006081B /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				71BF8B7A26F609260006081B /* ImagePickerView.swift */,
+				718E65E526F6D1BA0010165C /* ImageUIView.swift */,
+				718E65E826F71A0D0010165C /* photosUIView.swift */,
+				718E65EB26F71A250010165C /* albumUIView.swift */,
+				718E65EE26F74E430010165C /* IssueUIView.swift */,
+			);
+			path = Image;
+			sourceTree = "<group>";
+		};
 		890C992626EF3A6700494182 = {
 			isa = PBXGroup;
 			children = (
+				718E65E126F6BC600010165C /* Localizable.strings */,
 				890C993126EF3A6700494182 /* HifamilySwiftUI */,
 				890C993026EF3A6700494182 /* Products */,
+				C3E5AF600284A65580D91E19 /* Pods */,
+				A8658D52B628B7705DC4D74B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -78,6 +113,7 @@
 		890C993126EF3A6700494182 /* HifamilySwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				71BF8B7926F6090D0006081B /* Image */,
 				CDED5B0B26F4DF2300570485 /* Letter */,
 				890C993226EF3A6700494182 /* HifamilySwiftUIApp.swift */,
 				890C993426EF3A6700494182 /* ContentView.swift */,
@@ -122,6 +158,23 @@
 			path = Love;
 			sourceTree = "<group>";
 		};
+		A8658D52B628B7705DC4D74B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8EB6FA4C7D2C14E276DEA455 /* Pods_HifamilySwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C3E5AF600284A65580D91E19 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BDE5D32924C01CF71CF5F387 /* Pods-HifamilySwiftUI.debug.xcconfig */,
+				52E4DBD64E949E0CD50B8B47 /* Pods-HifamilySwiftUI.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		CDED5B0B26F4DF2300570485 /* Letter */ = {
 			isa = PBXGroup;
 			children = (
@@ -139,9 +192,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 890C994326EF3A6800494182 /* Build configuration list for PBXNativeTarget "HifamilySwiftUI" */;
 			buildPhases = (
+				7DE9E6C522074AB96E7DC2CC /* [CP] Check Pods Manifest.lock */,
 				890C992B26EF3A6700494182 /* Sources */,
 				890C992C26EF3A6700494182 /* Frameworks */,
 				890C992D26EF3A6700494182 /* Resources */,
+				F1FC3ED1770D91AFC8CBA518 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -173,6 +228,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"zh-Hans",
 			);
 			mainGroup = 890C992626EF3A6700494182;
 			productRefGroup = 890C993026EF3A6700494182 /* Products */;
@@ -190,11 +246,54 @@
 			buildActionMask = 2147483647;
 			files = (
 				890C993A26EF3A6800494182 /* Preview Assets.xcassets in Resources */,
+				718E65DF26F6BC600010165C /* Localizable.strings in Resources */,
 				890C993726EF3A6800494182 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7DE9E6C522074AB96E7DC2CC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HifamilySwiftUI-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F1FC3ED1770D91AFC8CBA518 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HifamilySwiftUI/Pods-HifamilySwiftUI-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HifamilySwiftUI/Pods-HifamilySwiftUI-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HifamilySwiftUI/Pods-HifamilySwiftUI-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		890C992B26EF3A6700494182 /* Sources */ = {
@@ -205,21 +304,38 @@
 				890C993526EF3A6700494182 /* ContentView.swift in Sources */,
 				8948191C26F5C0C90095E91D /* Model.xcdatamodeld in Sources */,
 				898693E726F374F400EA991E /* MissView.swift in Sources */,
+				71BF8B7B26F609260006081B /* ImagePickerView.swift in Sources */,
 				8989D13326F4D7A0007B6719 /* AddMemberCardUIView.swift in Sources */,
+				718E65EC26F71A250010165C /* albumUIView.swift in Sources */,
 				893BD75D26F03B7C00026C38 /* HomeView.swift in Sources */,
 				893BD76126F04A6000026C38 /* LoveView.swift in Sources */,
+				718E65E626F6D1BA0010165C /* ImageUIView.swift in Sources */,
 				898693E326F3473000EA991E /* CardUIView.swift in Sources */,
 				CDED5B0F26F4E0D300570485 /* WriteLetterVeiw.swift in Sources */,
 				8979282426F21053008F49AB /* HomeLandUIView.swift in Sources */,
 				CDE09D0826F79449004DE2AB /* DataTest.swift in Sources */,
 				898693DD26F3355F00EA991E /* MemberUIView.swift in Sources */,
 				890C993326EF3A6700494182 /* HifamilySwiftUIApp.swift in Sources */,
+				718E65EF26F74E430010165C /* IssueUIView.swift in Sources */,
 				CDED5B0D26F4DF2F00570485 /* LetterVeiw.swift in Sources */,
 				8996E2C026F420E000F122BD /* LoveHistoryView.swift in Sources */,
+				718E65E926F71A0D0010165C /* photosUIView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		718E65E126F6BC600010165C /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				718E65E026F6BC600010165C /* zh-Hans */,
+				718E65E326F6BC790010165C /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		890C994126EF3A6800494182 /* Debug */ = {
@@ -280,6 +396,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				USER_HEADER_SEARCH_PATHS = "";
 			};
 			name = Debug;
 		};
@@ -334,12 +451,14 @@
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				USER_HEADER_SEARCH_PATHS = "";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
 		890C994426EF3A6800494182 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BDE5D32924C01CF71CF5F387 /* Pods-HifamilySwiftUI.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -362,6 +481,7 @@
 		};
 		890C994526EF3A6800494182 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 52E4DBD64E949E0CD50B8B47 /* Pods-HifamilySwiftUI.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

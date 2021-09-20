@@ -93,7 +93,7 @@ struct MissView: View {
                     
                 TextField("个性化语句", text : $context)
                     .frame(width:250, height: 50, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
-                    .foregroundColor(.gray)
+                    .foregroundColor(grayColor2)
                     .textFieldStyle(UnderLineTextFieldStyle())
                     .keyboardType(.default)
                     .padding(EdgeInsets(top: 0, leading: -10, bottom: 10, trailing: 15))
@@ -103,7 +103,7 @@ struct MissView: View {
             HStack{
                 Text("例：妍妍摸了摸你并送了一份思念")
                     .padding(EdgeInsets(top: 0, leading: 10, bottom: 10, trailing: 15))
-                    .foregroundColor(.gray)
+                    .foregroundColor(grayColor)
                     .font(.system(size: 15))
                 Spacer()
             }
