@@ -31,15 +31,20 @@ struct IssueUIView: View {
             }
             ScrollView(){
                 VStack{
-                    TextField("记录下精彩一刻",text:$content)
-                        .frame(width:280, height: 50, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                    TextField("最怀念的高三,和张腾，萌萌，文青她们（还有我的男朋友）一起在家给我的妹妹拍照，妹妹快点长大呀！我们就能一起去北京天安门看升国旗了",text:$content)
+                        .frame(width:280,height: 300, alignment: .topLeading)
                         .foregroundColor(grayColor2)
                         .keyboardType(.default)
+                        .multilineTextAlignment(.leading)
 //                        .border(/*@START_MENU_TOKEN@*/Color.black/*@END_MENU_TOKEN@*/)
                         .ignoresSafeArea(.keyboard)
                 }
                 LazyVGrid(columns: items, content: {
-                    
+                    ForEach(1..<4){ index in
+                        Image("qiqi\(index)")
+                            .resizable()
+                            .frame(width: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, height: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                    }
                 }
                 )
                 
