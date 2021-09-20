@@ -139,7 +139,7 @@ struct LoveView: View {
                                                 .background( who == index ? LinearGradient(gradient: Gradient(colors: [Color.init(red : 255/255,green: 144/255,blue: 13/255), Color.init(red: 255/255, green: 169/255, blue: 54/255)]), startPoint: .topLeading, endPoint: .bottomTrailing) : LinearGradient(gradient: Gradient(colors: [Color.white, Color.white]), startPoint: .topLeading, endPoint: .bottomTrailing)).cornerRadius(15)
                             .shadow(color: Color("AccentColor"), radius: 3, x: 0.5, y: 0.5)
 //                            .overlay(RoundedRectangle(cornerRadius: 15.0, style: .continuous).stroke(Color.init(red: 255/255, green: 169/255, blue: 54/255),lineWidth: 2.0))
-                                                .padding(EdgeInsets(top: 5, leading: 20, bottom: 5, trailing: 30))
+                                                .padding(EdgeInsets(top: 5, leading: 20, bottom: 5, trailing: 20))
                                                 
                            
                         }
