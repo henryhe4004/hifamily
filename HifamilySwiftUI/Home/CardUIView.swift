@@ -14,7 +14,7 @@ struct CardUIView: View {
     @State var isChangeInformantion = false //用来标识是否更改信息
     @State var memberName = "智妍"
     @State var memberIdentity = "女儿"
-    @State var memberTelephone = "15025584040"
+    @State var memberTelephone = "2021/12/1"
     @State private var showingAlert = false
     
     var body: some View {
@@ -36,11 +36,11 @@ struct CardUIView: View {
                     .disabled(!isChangeInformantion)
                     .foregroundColor(Color("LandColorAfter"))
                 
-                Text("成员身份")
+                Text("成员生日")
                     .font(.callout)
                     .bold()
                     .frame(maxWidth: .infinity, alignment: .leading)
-                TextField("请输入成员身份",text:$memberIdentity)
+                TextField("请输入成员生日",text:$memberIdentity)
                     .textFieldStyle(RoundedBorderTextFieldStyle())
                     .disabled(!isChangeInformantion)
                     .foregroundColor(Color("LandColorAfter"))

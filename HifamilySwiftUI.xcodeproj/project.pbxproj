@@ -21,6 +21,8 @@
 		893BD75D26F03B7C00026C38 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 893BD75C26F03B7C00026C38 /* HomeView.swift */; };
 		893BD76126F04A6000026C38 /* LoveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 893BD76026F04A6000026C38 /* LoveView.swift */; };
 		8948191C26F5C0C90095E91D /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8948191A26F5C0C90095E91D /* Model.xcdatamodeld */; };
+		896128AC26F834590048A163 /* Family.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896128AB26F834590048A163 /* Family.swift */; };
+		89628E2626F81DEA00AA41C1 /* Textfield02.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89628E2526F81DEA00AA41C1 /* Textfield02.swift */; };
 		8979282426F21053008F49AB /* HomeLandUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8979282326F21053008F49AB /* HomeLandUIView.swift */; };
 		897B942553CF71EF103D7196 /* Pods_HifamilySwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EB6FA4C7D2C14E276DEA455 /* Pods_HifamilySwiftUI.framework */; };
 		898693DD26F3355F00EA991E /* MemberUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898693DC26F3355F00EA991E /* MemberUIView.swift */; };
@@ -52,17 +54,17 @@
 		893BD75C26F03B7C00026C38 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; usesTabs = 0; };
 		893BD76026F04A6000026C38 /* LoveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoveView.swift; sourceTree = "<group>"; };
 		8948191B26F5C0C90095E91D /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		896128AB26F834590048A163 /* Family.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Family.swift; sourceTree = "<group>"; };
+		89628E2526F81DEA00AA41C1 /* Textfield02.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Textfield02.swift; sourceTree = "<group>"; };
 		8979282326F21053008F49AB /* HomeLandUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeLandUIView.swift; sourceTree = "<group>"; };
 		898693DC26F3355F00EA991E /* MemberUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemberUIView.swift; sourceTree = "<group>"; };
 		898693E226F3473000EA991E /* CardUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardUIView.swift; sourceTree = "<group>"; };
 		898693E626F374F400EA991E /* MissView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissView.swift; sourceTree = "<group>"; };
 		8989D13226F4D7A0007B6719 /* AddMemberCardUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMemberCardUIView.swift; sourceTree = "<group>"; };
 		8996E2BF26F420E000F122BD /* LoveHistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoveHistoryView.swift; sourceTree = "<group>"; };
-
-		CDE09D0726F79449004DE2AB /* DataTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataTest.swift; sourceTree = "<group>"; };
-
 		8EB6FA4C7D2C14E276DEA455 /* Pods_HifamilySwiftUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HifamilySwiftUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDE5D32924C01CF71CF5F387 /* Pods-HifamilySwiftUI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HifamilySwiftUI.debug.xcconfig"; path = "Target Support Files/Pods-HifamilySwiftUI/Pods-HifamilySwiftUI.debug.xcconfig"; sourceTree = "<group>"; };
+		CDE09D0726F79449004DE2AB /* DataTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataTest.swift; sourceTree = "<group>"; };
 		CDED5B0C26F4DF2F00570485 /* LetterVeiw.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LetterVeiw.swift; sourceTree = "<group>"; };
 		CDED5B0E26F4E0D300570485 /* WriteLetterVeiw.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WriteLetterVeiw.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -113,12 +115,12 @@
 		890C993126EF3A6700494182 /* HifamilySwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				896128AA26F8341A0048A163 /* Model */,
 				71BF8B7926F6090D0006081B /* Image */,
 				CDED5B0B26F4DF2300570485 /* Letter */,
 				890C993226EF3A6700494182 /* HifamilySwiftUIApp.swift */,
 				890C993426EF3A6700494182 /* ContentView.swift */,
 				890C993B26EF3A6800494182 /* Persistence.swift */,
-				8948191A26F5C0C90095E91D /* Model.xcdatamodeld */,
 				898693E426F3746B00EA991E /* Love */,
 				8979282526F21739008F49AB /* Home */,
 				890C993626EF3A6800494182 /* Assets.xcassets */,
@@ -136,10 +138,21 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		896128AA26F8341A0048A163 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				896128AB26F834590048A163 /* Family.swift */,
+				8948191A26F5C0C90095E91D /* Model.xcdatamodeld */,
+			);
+			name = Model;
+			path = ..;
+			sourceTree = "<group>";
+		};
 		8979282526F21739008F49AB /* Home */ = {
 			isa = PBXGroup;
 			children = (
 				893BD75C26F03B7C00026C38 /* HomeView.swift */,
+				89628E2526F81DEA00AA41C1 /* Textfield02.swift */,
 				898693E226F3473000EA991E /* CardUIView.swift */,
 				8989D13226F4D7A0007B6719 /* AddMemberCardUIView.swift */,
 				8979282326F21053008F49AB /* HomeLandUIView.swift */,
@@ -305,6 +318,7 @@
 				8948191C26F5C0C90095E91D /* Model.xcdatamodeld in Sources */,
 				898693E726F374F400EA991E /* MissView.swift in Sources */,
 				71BF8B7B26F609260006081B /* ImagePickerView.swift in Sources */,
+				89628E2626F81DEA00AA41C1 /* Textfield02.swift in Sources */,
 				8989D13326F4D7A0007B6719 /* AddMemberCardUIView.swift in Sources */,
 				718E65EC26F71A250010165C /* albumUIView.swift in Sources */,
 				893BD75D26F03B7C00026C38 /* HomeView.swift in Sources */,
@@ -314,6 +328,7 @@
 				CDED5B0F26F4E0D300570485 /* WriteLetterVeiw.swift in Sources */,
 				8979282426F21053008F49AB /* HomeLandUIView.swift in Sources */,
 				CDE09D0826F79449004DE2AB /* DataTest.swift in Sources */,
+				896128AC26F834590048A163 /* Family.swift in Sources */,
 				898693DD26F3355F00EA991E /* MemberUIView.swift in Sources */,
 				890C993326EF3A6700494182 /* HifamilySwiftUIApp.swift in Sources */,
 				718E65EF26F74E430010165C /* IssueUIView.swift in Sources */,
@@ -342,6 +357,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -396,7 +412,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				USER_HEADER_SEARCH_PATHS = "";
+				USER_HEADER_SEARCH_PATHS = "${PODS_ROOT}/**";
 			};
 			name = Debug;
 		};
@@ -404,6 +420,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -451,7 +468,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
-				USER_HEADER_SEARCH_PATHS = "";
+				USER_HEADER_SEARCH_PATHS = "${PODS_ROOT}/**";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;

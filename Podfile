@@ -3,9 +3,11 @@
 
 target 'HifamilySwiftUI' do
   # Comment the next line if you don't want to use dynamic frameworks
- pod 'YPImagePicker' 
+
  use_frameworks!
 
   # Pods for HifamilySwiftUI
+   pod 'YPImagePicker' 
+   pod 'RealmSwift'
 
 end
