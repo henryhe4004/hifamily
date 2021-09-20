@@ -10,6 +10,13 @@ import SwiftUI
 struct IssueUIView: View {
     @State var people : String = "妍妍"
     @State var content : String = ""
+    
+    var items : [GridItem] = [
+        GridItem(GridItem.Size.flexible(),spacing: 5),
+        GridItem(GridItem.Size.flexible(),spacing: 5),
+        GridItem(GridItem.Size.flexible(),spacing: 5)
+    ]
+    
     var body: some View {
         VStack{
             Divider()
@@ -30,8 +37,12 @@ struct IssueUIView: View {
                         .keyboardType(.default)
 //                        .border(/*@START_MENU_TOKEN@*/Color.black/*@END_MENU_TOKEN@*/)
                         .ignoresSafeArea(.keyboard)
+                }
+                LazyVGrid(columns: items, content: {
                     
                 }
+                )
+                
             }
             
 //            TextField
