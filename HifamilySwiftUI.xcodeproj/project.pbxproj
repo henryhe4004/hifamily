@@ -21,6 +21,7 @@
 		898693E726F374F400EA991E /* MissView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898693E626F374F400EA991E /* MissView.swift */; };
 		8989D13326F4D7A0007B6719 /* AddMemberCardUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8989D13226F4D7A0007B6719 /* AddMemberCardUIView.swift */; };
 		8996E2C026F420E000F122BD /* LoveHistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8996E2BF26F420E000F122BD /* LoveHistoryView.swift */; };
+		CDE09D0826F79449004DE2AB /* DataTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE09D0726F79449004DE2AB /* DataTest.swift */; };
 		CDED5B0D26F4DF2F00570485 /* LetterVeiw.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDED5B0C26F4DF2F00570485 /* LetterVeiw.swift */; };
 		CDED5B0F26F4E0D300570485 /* WriteLetterVeiw.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDED5B0E26F4E0D300570485 /* WriteLetterVeiw.swift */; };
 /* End PBXBuildFile section */
@@ -42,6 +43,7 @@
 		898693E626F374F400EA991E /* MissView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissView.swift; sourceTree = "<group>"; };
 		8989D13226F4D7A0007B6719 /* AddMemberCardUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMemberCardUIView.swift; sourceTree = "<group>"; };
 		8996E2BF26F420E000F122BD /* LoveHistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoveHistoryView.swift; sourceTree = "<group>"; };
+		CDE09D0726F79449004DE2AB /* DataTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataTest.swift; sourceTree = "<group>"; };
 		CDED5B0C26F4DF2F00570485 /* LetterVeiw.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LetterVeiw.swift; sourceTree = "<group>"; };
 		CDED5B0E26F4E0D300570485 /* WriteLetterVeiw.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WriteLetterVeiw.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -125,6 +127,7 @@
 			children = (
 				CDED5B0C26F4DF2F00570485 /* LetterVeiw.swift */,
 				CDED5B0E26F4E0D300570485 /* WriteLetterVeiw.swift */,
+				CDE09D0726F79449004DE2AB /* DataTest.swift */,
 			);
 			path = Letter;
 			sourceTree = "<group>";
@@ -208,6 +211,7 @@
 				898693E326F3473000EA991E /* CardUIView.swift in Sources */,
 				CDED5B0F26F4E0D300570485 /* WriteLetterVeiw.swift in Sources */,
 				8979282426F21053008F49AB /* HomeLandUIView.swift in Sources */,
+				CDE09D0826F79449004DE2AB /* DataTest.swift in Sources */,
 				898693DD26F3355F00EA991E /* MemberUIView.swift in Sources */,
 				890C993326EF3A6700494182 /* HifamilySwiftUIApp.swift in Sources */,
 				CDED5B0D26F4DF2F00570485 /* LetterVeiw.swift in Sources */,
