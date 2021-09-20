@@ -191,11 +191,7 @@ struct LetterView: View {
                             }
                             .frame(width: 152)
                            
-//                            PencilBox()
-                                NavigationLink(destination: WriteLetterView())
-                                {
-                                    PencilBox()
-                                }.navigationBarHidden(true)
+                            PencilBoxVeiw()
                             
                         }.padding(EdgeInsets(top: -50, leading: 0, bottom: 0, trailing: 0))
                     }
@@ -371,7 +367,7 @@ struct LetterView: View {
                                 }
                             }
                             .frame(width: 152)
-                            PencilBox()
+                            PencilBoxVeiw()
                         }.padding(EdgeInsets(top: -50, leading: 0, bottom: 0, trailing: 0))
                     }
                     .frame(height: 294 )
@@ -546,7 +542,7 @@ struct LetterView: View {
                                 }
                             }
                             .frame(width: 152)
-                            PencilBox()
+                            PencilBoxVeiw()
                         }.padding(EdgeInsets(top: -50, leading: 0, bottom: 0, trailing: 0))
                     }
                     .frame(height: 294 )
@@ -624,7 +620,7 @@ struct LetterView: View {
                                 }
                             }
                             .frame(width: 152)
-                            PencilBox()
+                            PencilBoxVeiw()
                         }.padding(EdgeInsets(top: -130, leading: 0, bottom: 0, trailing: 0))
                     }
                     .frame(height: 156,alignment: .bottom)
@@ -702,7 +698,7 @@ struct LetterView: View {
                                 }
                             }
                             .frame(width: 152)
-                            PencilBox()
+                            PencilBoxVeiw()
                         }.padding(EdgeInsets(top: -130, leading: 0, bottom: 0, trailing: 0))
                     }
                     .frame(height: 156,alignment: .bottom)
@@ -793,5 +789,15 @@ struct PencilBox: View {
             Image("white pencil")
                 .frame(width: 65.94, height: 65.8, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
         }
+    }
+}
+
+struct PencilBoxVeiw: View {
+    var body: some View {
+        NavigationLink(destination: WriteLetterView())
+        {
+            PencilBox()
+        }.navigationBarHidden(true)
+        .navigationTitle("返回")
     }
 }

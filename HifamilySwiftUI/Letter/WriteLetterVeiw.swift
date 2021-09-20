@@ -9,10 +9,12 @@ import SwiftUI
 
 final class Letters: ObservableObject {
     @Published  var letter:String
-    @Published var nickname:String
+    @Published var recipient:String
+    @Published var sender:String
     init() {
         letter = ""
-        nickname = ""
+        recipient = ""
+        sender = ""
     }
 }
 
@@ -22,7 +24,7 @@ struct WriteLetterView: View {
     var body: some View {
         
         VStack {
-            UpperLine()
+//            UpperLine()
             Divider()
             VStack{
                 VStack {
@@ -33,17 +35,17 @@ struct WriteLetterView: View {
     //                    Text("Your letter is \(letterr.letter)!")
                         TextField(
                             "输入",
-                            text: $letterr.nickname
+                            text: $letterr.recipient
                         ) {isEditing in
-                            self.letterr.nickname = letterr.letter
+                            self.letterr.recipient = letterr.recipient
                         }.font(.system(size: 20))
-                        .autocapitalization(.none)
-                        .disableAutocorrection(true)
-                        .keyboardType(.default)
+//                        .autocapitalization(.none)
+//                        .disableAutocorrection(true)
+//                        .keyboardType(.default)
                         
                     }.padding(EdgeInsets(top: 28, leading: 33, bottom: 0, trailing: 20))
                     Divider()
-                        .frame(width:353 ,height: 1 ,alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                        .frame(width:323 ,height: 1 ,alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                         .padding(EdgeInsets(top: -1, leading: 0, bottom: 0, trailing: 0))
                 }
                 
@@ -51,7 +53,7 @@ struct WriteLetterView: View {
                     TextField("在这输入你的家书内容~", text: $letterr.letter){
                         isEditing in
                         self.letterr.letter = letterr.letter
-                    }.frame(width: 353, height: 200,alignment: .topLeading)
+                    }.frame(width: 323, height: 200,alignment: .topLeading)
                     
                     
                 }.padding(EdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 0))
@@ -64,24 +66,24 @@ struct WriteLetterView: View {
     //                    Text("Your letter is \(letterr.letter)!")
                         TextField(
                             "输入",
-                            text: $letterr.nickname
+                            text: $letterr.sender
                         ) {isEditing in
-                            self.letterr.nickname = letterr.letter
+                            self.letterr.sender = letterr.sender
                         }.font(.system(size: 20))
-                        .autocapitalization(.none)
-                        .disableAutocorrection(true)
-                        .keyboardType(.default)
+//                        .autocapitalization(.none)
+//                        .disableAutocorrection(true)
+//                        .keyboardType(.default)
                         
                     }.padding(EdgeInsets(top: 28, leading: 33, bottom: 0, trailing: 20))
                     Divider()
-                        .frame(width:353 ,height: 1 ,alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                        .frame(width:323 ,height: 1 ,alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                         .padding(EdgeInsets(top: -1, leading: 0, bottom: 0, trailing: 0))
                 }
                 
                 
                 VStack {
                     Image("family-letter")
-                        .padding(EdgeInsets(top: 14, leading: -140, bottom: 0, trailing: 0))
+                        .padding(EdgeInsets(top: 14, leading: -110, bottom: 0, trailing: 0))
                 }
                 VStack {
                     ZStack {
@@ -90,7 +92,7 @@ struct WriteLetterView: View {
                             .foregroundColor(orangeColor)
                         Text("公开")
                             .foregroundColor(.white)
-                            .font(.system(size: 20))
+                            .font(.system(size: 16))
                     }
                     ZStack {
                         RoundedRectangle(cornerRadius: 13)
@@ -98,10 +100,18 @@ struct WriteLetterView: View {
                             .foregroundColor(Color(UIColor(red: 0.82, green: 0.82, blue: 0.82, alpha: 1)))
                         Text("私密")
                             .foregroundColor(.white)
-                            .font(.system(size: 20))
+                            .font(.system(size: 16))
                     }.padding(EdgeInsets(top: 3, leading: 0, bottom: 0, trailing: 0))
                 }.padding(EdgeInsets(top: 20, leading: 270, bottom: 0, trailing:0))
-            }
+            }.navigationBarTitle(Text("写家书").foregroundColor(grayColor2)
+                .font(.system(size: 22)),displayMode: .inline)
+            .navigationBarItems(trailing: Button(action:{} ){
+                Text("寄出")
+                    .foregroundColor(orangeColor)
+//                    .font(.system(size: 22))
+            })
+            
+            Spacer()
         }
 }
 
