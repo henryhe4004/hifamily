@@ -24,7 +24,7 @@ struct MediaPicker: UIViewControllerRepresentable {
     func makeUIViewController(context: Context) -> YPImagePicker {
         var config = YPImagePickerConfiguration()
         //是否可以滑动
-        config.isScrollToChangeModesEnabled = false
+        config.isScrollToChangeModesEnabled = true
         //是否只能拍摄正方形
         config.onlySquareImagesFromCamera = false
         //默认打开前置摄像头
@@ -36,14 +36,14 @@ struct MediaPicker: UIViewControllerRepresentable {
         //展示啥
         config.screens = [.library,.photo,.video]
         //提供裁剪
-        config.showsCrop = .rectangle(ratio: 30)
+        config.showsCrop = .rectangle(ratio: 1)
         //图片大小
         config.targetImageSize = YPImageSize.original
         //加功能
         config.overlayView = UIView()
         //是否隐藏状态栏
         config.hidesStatusBar = false
-        config.hidesBottomBar = false
+        config.hidesBottomBar = true
         config.bottomMenuItemSelectedTextColour = UIColor(Color("AccentColor"))
         config.bottomMenuItemUnSelectedTextColour = UIColor(Color.white)
         //最大5倍变焦
