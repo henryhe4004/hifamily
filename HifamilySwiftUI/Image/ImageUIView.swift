@@ -11,8 +11,10 @@ struct ImageUIView: View {
     @State var selectWhich : [String] = ["照片","相册","回忆"]
     @State private var index : Int = -1
     var body: some View {
+        NavigationView {
         VStack{
-            HStack {
+            ZStack {
+                HStack{
                 Image("Iconly-Bulk-Setting")
                     .resizable()
                     .frame(width:23,
@@ -23,19 +25,30 @@ struct ImageUIView: View {
                     .foregroundColor(Color("AccentColor"))
                     .font(.system(size: 18))
                 Spacer()
-                Image("Iconly-Bulk-Plus")
-                    .resizable()
-                    .frame(width:23,
-                           height:23,
-                           alignment:.center)
+                NavigationLink(
+                    destination: IssueUIView())
+                {
+                    Image("Iconly-Bulk-Plus")
+                        .resizable()
+                        .frame(width:23,
+                               height:23,
+                               alignment:.center)
+                    
+                }.navigationBarTitle("",displayMode: .inline)
+                .navigationBarHidden(true)
+                .navigationTitle("返回")
+                
+                    
+                }
+                
             }.padding()
             Divider()
             HStack{
                   
                     Button(action: {
-                        if(index == -1){
+                       
                             index=1
-                        }
+                        
                         
                     }){
                         HStack {
@@ -51,11 +64,11 @@ struct ImageUIView: View {
                 .animation(.easeInOut)
                 .background(  LinearGradient(gradient: Gradient(colors: [Color.white, Color.white]), startPoint: .topLeading, endPoint: .bottomTrailing)).cornerRadius(15)
                     .shadow(color: Color.init("AccentColor"), radius: 3, x: 0.5, y: 1)
-                .padding(EdgeInsets(top: 5, leading: 20, bottom: 5, trailing: 20))
+                .padding(EdgeInsets(top: 10, leading: 20, bottom: 5, trailing: 20))
                 Button(action: {
-                    if(index == -1){
+                    
                         index=2
-                    }
+                    
                     
                 }){
                     HStack {
@@ -71,12 +84,12 @@ struct ImageUIView: View {
             .animation(.easeInOut)
             .background(  LinearGradient(gradient: Gradient(colors: [Color.white, Color.white]), startPoint: .topLeading, endPoint: .bottomTrailing)).cornerRadius(15)
                 .shadow(color: Color.init("AccentColor"), radius: 3, x: 0.5, y: 1)
-            .padding(EdgeInsets(top: 5, leading: 10, bottom: 5, trailing: 15))
+            .padding(EdgeInsets(top: 10, leading: 10, bottom: 5, trailing: 15))
                 
                 Button(action: {
-                    if(index == -1){
+                  
                         index=3
-                    }
+                    
                     
                 }){
                     HStack {
@@ -92,7 +105,7 @@ struct ImageUIView: View {
             .animation(.easeInOut)
             .background(  LinearGradient(gradient: Gradient(colors: [Color.white, Color.white]), startPoint: .topLeading, endPoint: .bottomTrailing)).cornerRadius(15)
                 .shadow(color: Color.init("AccentColor"), radius: 3, x: 0.5, y: 1)
-            .padding(EdgeInsets(top: 5, leading: 10, bottom: 5, trailing: 15))
+            .padding(EdgeInsets(top: 10, leading: 10, bottom: 5, trailing: 15))
                 }
             ScrollView(.vertical, showsIndicators: false){
                 ZStack{
@@ -101,7 +114,12 @@ struct ImageUIView: View {
             }
         
         }
+            ScrollView(){
+                
+            }
+        }
     }
+    
 }
 
 struct ImageUIView_Previews: PreviewProvider {
