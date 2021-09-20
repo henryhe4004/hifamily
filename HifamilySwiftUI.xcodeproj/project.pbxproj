@@ -20,6 +20,7 @@
 		893BD75D26F03B7C00026C38 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 893BD75C26F03B7C00026C38 /* HomeView.swift */; };
 		893BD76126F04A6000026C38 /* LoveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 893BD76026F04A6000026C38 /* LoveView.swift */; };
 		8948191C26F5C0C90095E91D /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8948191A26F5C0C90095E91D /* Model.xcdatamodeld */; };
+		89628E2626F81DEA00AA41C1 /* Textfield02.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89628E2526F81DEA00AA41C1 /* Textfield02.swift */; };
 		8979282426F21053008F49AB /* HomeLandUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8979282326F21053008F49AB /* HomeLandUIView.swift */; };
 		897B942553CF71EF103D7196 /* Pods_HifamilySwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EB6FA4C7D2C14E276DEA455 /* Pods_HifamilySwiftUI.framework */; };
 		898693DD26F3355F00EA991E /* MemberUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898693DC26F3355F00EA991E /* MemberUIView.swift */; };
@@ -49,6 +50,7 @@
 		893BD75C26F03B7C00026C38 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; usesTabs = 0; };
 		893BD76026F04A6000026C38 /* LoveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoveView.swift; sourceTree = "<group>"; };
 		8948191B26F5C0C90095E91D /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		89628E2526F81DEA00AA41C1 /* Textfield02.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Textfield02.swift; sourceTree = "<group>"; };
 		8979282326F21053008F49AB /* HomeLandUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeLandUIView.swift; sourceTree = "<group>"; };
 		898693DC26F3355F00EA991E /* MemberUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemberUIView.swift; sourceTree = "<group>"; };
 		898693E226F3473000EA991E /* CardUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardUIView.swift; sourceTree = "<group>"; };
@@ -133,6 +135,7 @@
 			isa = PBXGroup;
 			children = (
 				893BD75C26F03B7C00026C38 /* HomeView.swift */,
+				89628E2526F81DEA00AA41C1 /* Textfield02.swift */,
 				898693E226F3473000EA991E /* CardUIView.swift */,
 				8989D13226F4D7A0007B6719 /* AddMemberCardUIView.swift */,
 				8979282326F21053008F49AB /* HomeLandUIView.swift */,
@@ -297,6 +300,7 @@
 				8948191C26F5C0C90095E91D /* Model.xcdatamodeld in Sources */,
 				898693E726F374F400EA991E /* MissView.swift in Sources */,
 				71BF8B7B26F609260006081B /* ImagePickerView.swift in Sources */,
+				89628E2626F81DEA00AA41C1 /* Textfield02.swift in Sources */,
 				8989D13326F4D7A0007B6719 /* AddMemberCardUIView.swift in Sources */,
 				718E65EC26F71A250010165C /* albumUIView.swift in Sources */,
 				893BD75D26F03B7C00026C38 /* HomeView.swift in Sources */,
