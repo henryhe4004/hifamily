@@ -25,23 +25,84 @@ struct WriteLetterView: View {
             UpperLine()
             Divider()
             VStack{
-                HStack {
-                    Text("收信人：")
-                    Text("Your letter is \(letterr.letter)!")
-                    TextField(
-                        "User Name",
-                        text: $letterr.letter
-                    ) {isEditing in
-                        self.letterr.letter = letterr.letter
-                    }
-                    .textFieldStyle(RoundedBorderTextFieldStyle())
-                    .autocapitalization(.none)
-                    .disableAutocorrection(true)
-                    .keyboardType(.numberPad)
+                VStack {
+                    HStack {
+                        Text("收件人:")
+                            .foregroundColor(Color(UIColor(red: 0.38, green: 0.38, blue: 0.38,alpha:1)))
+                            .font(.system(size: 20))
+    //                    Text("Your letter is \(letterr.letter)!")
+                        TextField(
+                            "输入",
+                            text: $letterr.nickname
+                        ) {isEditing in
+                            self.letterr.nickname = letterr.letter
+                        }.font(.system(size: 20))
+                        .autocapitalization(.none)
+                        .disableAutocorrection(true)
+                        .keyboardType(.default)
+                        
+                    }.padding(EdgeInsets(top: 28, leading: 33, bottom: 0, trailing: 20))
+                    Divider()
+                        .frame(width:353 ,height: 1 ,alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                        .padding(EdgeInsets(top: -1, leading: 0, bottom: 0, trailing: 0))
                 }
+                
+                VStack {
+                    TextField("在这输入你的家书内容~", text: $letterr.letter){
+                        isEditing in
+                        self.letterr.letter = letterr.letter
+                    }.frame(width: 353, height: 200,alignment: .topLeading)
+                    
+                    
+                }.padding(EdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 0))
+                
+                VStack {
+                    HStack {
+                        Text("寄信人:")
+                            .foregroundColor(Color(UIColor(red: 0.38, green: 0.38, blue: 0.38,alpha:1)))
+                            .font(.system(size: 20))
+    //                    Text("Your letter is \(letterr.letter)!")
+                        TextField(
+                            "输入",
+                            text: $letterr.nickname
+                        ) {isEditing in
+                            self.letterr.nickname = letterr.letter
+                        }.font(.system(size: 20))
+                        .autocapitalization(.none)
+                        .disableAutocorrection(true)
+                        .keyboardType(.default)
+                        
+                    }.padding(EdgeInsets(top: 28, leading: 33, bottom: 0, trailing: 20))
+                    Divider()
+                        .frame(width:353 ,height: 1 ,alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                        .padding(EdgeInsets(top: -1, leading: 0, bottom: 0, trailing: 0))
+                }
+                
+                
+                VStack {
+                    Image("family-letter")
+                        .padding(EdgeInsets(top: 14, leading: -140, bottom: 0, trailing: 0))
+                }
+                VStack {
+                    ZStack {
+                        RoundedRectangle(cornerRadius: 13)
+                            .frame(width: 58, height: 29, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                            .foregroundColor(orangeColor)
+                        Text("公开")
+                            .foregroundColor(.white)
+                            .font(.system(size: 20))
+                    }
+                    ZStack {
+                        RoundedRectangle(cornerRadius: 13)
+                            .frame(width: 58, height: 29, alignment: .center)
+                            .foregroundColor(Color(UIColor(red: 0.82, green: 0.82, blue: 0.82, alpha: 1)))
+                        Text("私密")
+                            .foregroundColor(.white)
+                            .font(.system(size: 20))
+                    }.padding(EdgeInsets(top: 3, leading: 0, bottom: 0, trailing: 0))
+                }.padding(EdgeInsets(top: 20, leading: 270, bottom: 0, trailing:0))
             }
         }
-    }
 }
 
 struct WriteLetterView_Previews: PreviewProvider {
@@ -68,4 +129,5 @@ struct UpperLine: View {
                 .font(.system(size: 22))
         }.padding()
     }
+}
 }
