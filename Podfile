@@ -8,6 +8,5 @@ target 'HifamilySwiftUI' do
 
   # Pods for HifamilySwiftUI
    pod 'YPImagePicker' 
-   pod 'RealmSwift'
 
 end
